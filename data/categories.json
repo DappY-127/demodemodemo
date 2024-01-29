@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "children" : [ {
+        "name" : "Contact Us Form",
+        "uid" : "b15bf12a607ba598",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1706535859232,
+          "stop" : 1706535879802,
+          "duration" : 20570
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove All Products From Cart",
+        "uid" : "ac99c3c6e0e09095",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1706535938541,
+          "stop" : 1706535956789,
+          "duration" : 18248
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Verify Test Cases Page",
+        "uid" : "6c26a23cd1e518c",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1706535974089,
+          "stop" : 1706535991942,
+          "duration" : 17853
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Expected 'Men - Tshirts Products' in PRODUCTS_TEXT, but found 'ALL PRODUCTS'",
+      "children" : [ {
+        "name" : "View Category Products",
+        "uid" : "3379bea0ac306965",
+        "parentUid" : "d6aba755371a3a457bc9c0966aca98ec",
+        "status" : "failed",
+        "time" : {
+          "start" : 1706535887865,
+          "stop" : 1706535894144,
+          "duration" : 6279
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d6aba755371a3a457bc9c0966aca98ec"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
