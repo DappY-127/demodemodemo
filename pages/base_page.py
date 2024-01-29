@@ -29,7 +29,7 @@ class BasePage(HeaderFooterElements):
         self.is_header_visible()
         try:
             with allure.step(f"Page {self.PAGE_URL} is opened"):
-                self.wait.until(EC.url_to_be(self.PAGE_URL))
+                self.wait.until(EC.url_to_be(self.PAGE_URL.split('#')[0]))
         except Exception as e:
             current_url = self.browser.current_url
             allure.attach(f"Test failed. Exception: {str(e)}. Current URL: {current_url}", name="Test Failure Details", attachment_type=allure.attachment_type.TEXT)
