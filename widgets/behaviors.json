@@ -12,6 +12,17 @@
       "total" : 3
     }
   }, {
+    "uid" : "c8c9d2bb401e599c2322125d8aa5c4ac",
+    "name" : "Product Management",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
     "uid" : "2b3882ec55ec5e64d01bbad5c589847e",
     "name" : "Shopping & Checkout",
     "statistic" : {
@@ -19,28 +30,6 @@
       "broken" : 1,
       "skipped" : 0,
       "passed" : 1,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
-    "uid" : "9bf97060ccde1345fbd62d132bd91b64",
-    "name" : "Customer Support",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    }
-  }, {
-    "uid" : "c8c9d2bb401e599c2322125d8aa5c4ac",
-    "name" : "Product Management",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
       "unknown" : 0,
       "total" : 2
     }
@@ -54,6 +43,17 @@
       "passed" : 2,
       "unknown" : 0,
       "total" : 2
+    }
+  }, {
+    "uid" : "9bf97060ccde1345fbd62d132bd91b64",
+    "name" : "Customer Support",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
     }
   } ]
 }

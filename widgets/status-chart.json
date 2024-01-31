@@ -1,260 +1,260 @@
 [ {
-  "uid" : "8824f640bccdb802",
-  "name" : "Register User",
+  "uid" : "d8f49a7ca6469cb9",
+  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
   "time" : {
-    "start" : 1706709312353,
-    "stop" : 1706709330180,
-    "duration" : 17827
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "8dfe79d67c3d44bf",
-  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
-  "time" : {
-    "start" : 1706709182858,
-    "stop" : 1706709185057,
-    "duration" : 2199
+    "start" : 1706710197350,
+    "stop" : 1706710199986,
+    "duration" : 2636
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2e26c8b8d6b67936",
-  "name" : "Add to cart from Recommended items",
+  "uid" : "2cb5f2de563cb16",
+  "name" : "Verify Product Quantity in Cart",
   "time" : {
-    "start" : 1706709178047,
-    "stop" : 1706709181583,
-    "duration" : 3536
+    "start" : 1706710154060,
+    "stop" : 1706710158445,
+    "duration" : 4385
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "784e8b5a4e316526",
-  "name" : "Place Order: Register while Checkout",
-  "time" : {
-    "start" : 1706709201107,
-    "stop" : 1706709220544,
-    "duration" : 19437
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "291535b70a499d02",
-  "name" : "Add Review on Product",
-  "time" : {
-    "start" : 1706709173073,
-    "stop" : 1706709176801,
-    "duration" : 3728
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "4c83ceaf8f0b6162",
-  "name" : "Add Products in Cart",
-  "time" : {
-    "start" : 1706709142305,
-    "stop" : 1706709148625,
-    "duration" : 6320
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "2921c898d6bf6954",
-  "name" : "Verify Test Cases Page",
-  "time" : {
-    "start" : 1706709189813,
-    "stop" : 1706709193205,
-    "duration" : 3392
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d13a8b91070d7b64",
-  "name" : "Register User with existing email",
-  "time" : {
-    "start" : 1706709331434,
-    "stop" : 1706709334275,
-    "duration" : 2841
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "1afa5d152bbfe0cd",
-  "name" : "Remove Products From Cart",
-  "time" : {
-    "start" : 1706709155958,
-    "stop" : 1706709164538,
-    "duration" : 8580
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "7cb8120f09370394",
-  "name" : "Login User with correct email and password",
-  "time" : {
-    "start" : 1706709335532,
-    "stop" : 1706709353208,
-    "duration" : 17676
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "f3e2a4307e3fb562",
+  "uid" : "dd94c67895ac9dd2",
   "name" : "Place Order: Register before Checkout",
   "time" : {
-    "start" : 1706709221814,
-    "stop" : 1706709241916,
-    "duration" : 20102
+    "start" : 1706710235105,
+    "stop" : 1706710254711,
+    "duration" : 19606
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "fb012fd70f979927",
-  "name" : "Logout User",
+  "uid" : "41f10104d561f45c",
+  "name" : "Login User with incorrect email and password",
   "time" : {
-    "start" : 1706709358773,
-    "stop" : 1706709376439,
+    "start" : 1706710378014,
+    "stop" : 1706710380691,
+    "duration" : 2677
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5c975e9fe73c60f7",
+  "name" : "View & Cart Brand Products",
+  "time" : {
+    "start" : 1706710134191,
+    "stop" : 1706710139012,
+    "duration" : 4821
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58e3db8f48569a21",
+  "name" : "Place Order: Login before Checkout",
+  "time" : {
+    "start" : 1706710256006,
+    "stop" : 1706710282777,
+    "duration" : 26771
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "31f3cc9eecf05189",
+  "name" : "Remove Products From Cart",
+  "time" : {
+    "start" : 1706710159700,
+    "stop" : 1706710161457,
+    "duration" : 1757
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "b9497a229822e893",
+  "name" : "Register User",
+  "time" : {
+    "start" : 1706710335595,
+    "stop" : 1706710353234,
+    "duration" : 17639
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "cc5e56382a8bd6d5",
+  "name" : "Contact Us Form",
+  "time" : {
+    "start" : 1706710103126,
+    "stop" : 1706710107701,
+    "duration" : 4575
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6720b3f9c40c787",
+  "name" : "Add Products in Cart",
+  "time" : {
+    "start" : 1706710146459,
+    "stop" : 1706710152796,
+    "duration" : 6337
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8615f5e89d5b8f3d",
+  "name" : "Verify All Products and Product Detail Page",
+  "time" : {
+    "start" : 1706710108993,
+    "stop" : 1706710126659,
     "duration" : 17666
   },
   "status" : "broken",
-  "severity" : "critical"
+  "severity" : "normal"
 }, {
-  "uid" : "a79954074563e32c",
-  "name" : "Place Order: Login before Checkout",
-  "time" : {
-    "start" : 1706709243211,
-    "stop" : 1706709267746,
-    "duration" : 24535
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "df6ebd8ed04b8582",
-  "name" : "Search Products and Verify Cart After Login",
-  "time" : {
-    "start" : 1706709269057,
-    "stop" : 1706709291477,
-    "duration" : 22420
-  },
-  "status" : "broken",
-  "severity" : "critical"
-}, {
-  "uid" : "caa32146c1e1712c",
+  "uid" : "9978167fb2f4882e",
   "name" : "Verify address details in checkout page",
   "time" : {
-    "start" : 1706709292751,
-    "stop" : 1706709311070,
-    "duration" : 18319
+    "start" : 1706710310581,
+    "stop" : 1706710334310,
+    "duration" : 23729
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "d93b10faa1d676dd",
-  "name" : "Verify Product Quantity in Cart",
+  "uid" : "999b2c9820112593",
+  "name" : "Register User with existing email",
   "time" : {
-    "start" : 1706709149892,
-    "stop" : 1706709154703,
-    "duration" : 4811
+    "start" : 1706710354514,
+    "stop" : 1706710357849,
+    "duration" : 3335
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "6c4d08e238683d8e",
-  "name" : "View Category Products",
+  "uid" : "9887db10c8d92555",
+  "name" : "Logout User",
   "time" : {
-    "start" : 1706709124523,
-    "stop" : 1706709129660,
-    "duration" : 5137
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c10a7f477a1fcf56",
-  "name" : "Contact Us Form",
-  "time" : {
-    "start" : 1706709097421,
-    "stop" : 1706709117585,
-    "duration" : 20164
+    "start" : 1706710381966,
+    "stop" : 1706710400316,
+    "duration" : 18350
   },
   "status" : "broken",
   "severity" : "critical"
 }, {
-  "uid" : "be378644f973dc11",
-  "name" : "Scroll Up without 'Arrow' button and Scroll Down functionality",
-  "time" : {
-    "start" : 1706709186321,
-    "stop" : 1706709188550,
-    "duration" : 2229
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "61e89a124e2df3d4",
-  "name" : "Search Product",
-  "time" : {
-    "start" : 1706709136799,
-    "stop" : 1706709141032,
-    "duration" : 4233
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5ef438702541a5a6",
-  "name" : "Verify All Products and Product Detail Page",
-  "time" : {
-    "start" : 1706709119042,
-    "stop" : 1706709123259,
-    "duration" : 4217
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c191bea926519a8e",
-  "name" : "View & Cart Brand Products",
-  "time" : {
-    "start" : 1706709130938,
-    "stop" : 1706709135539,
-    "duration" : 4601
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "b7dc1137ac656f11",
-  "name" : "Login User with incorrect email and password",
-  "time" : {
-    "start" : 1706709354471,
-    "stop" : 1706709357524,
-    "duration" : 3053
-  },
-  "status" : "passed",
-  "severity" : "critical"
-}, {
-  "uid" : "41c04e9b3d8b5e63",
+  "uid" : "15689f4acd2ed781",
   "name" : "Verify Subscription in home page",
   "time" : {
-    "start" : 1706709194449,
-    "stop" : 1706709196247,
-    "duration" : 1798
+    "start" : 1706710206715,
+    "stop" : 1706710208623,
+    "duration" : 1908
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "797131f3d63778a4",
-  "name" : "Verify Subscription in cart page",
+  "uid" : "9e9d33b0a450a363",
+  "name" : "Scroll Up using 'Arrow' button and Scroll Down functionality",
   "time" : {
-    "start" : 1706709197514,
-    "stop" : 1706709199831,
-    "duration" : 2317
+    "start" : 1706710194212,
+    "stop" : 1706710196091,
+    "duration" : 1879
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30c620d3fd64760",
+  "name" : "Login User with correct email and password",
+  "time" : {
+    "start" : 1706710359099,
+    "stop" : 1706710376736,
+    "duration" : 17637
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "25d749c22e8d575c",
+  "name" : "Add to cart from Recommended items",
+  "time" : {
+    "start" : 1706710189504,
+    "stop" : 1706710192942,
+    "duration" : 3438
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "4431f34b28a67bc1",
+  "uid" : "caa81cece8f555b1",
+  "name" : "Search Product",
+  "time" : {
+    "start" : 1706710140266,
+    "stop" : 1706710145186,
+    "duration" : 4920
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2f1dc2be6cce9848",
+  "name" : "Add Review on Product",
+  "time" : {
+    "start" : 1706710170866,
+    "stop" : 1706710188167,
+    "duration" : 17301
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "187bc073c6c96f4",
+  "name" : "Verify Test Cases Page",
+  "time" : {
+    "start" : 1706710201253,
+    "stop" : 1706710205428,
+    "duration" : 4175
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b069a6bd0a3c2dcb",
+  "name" : "View Category Products",
+  "time" : {
+    "start" : 1706710127976,
+    "stop" : 1706710132931,
+    "duration" : 4955
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c07090556f092e8",
+  "name" : "Place Order: Register while Checkout",
+  "time" : {
+    "start" : 1706710213902,
+    "stop" : 1706710233810,
+    "duration" : 19908
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "850de2f7bf591f07",
   "name" : "Remove All Products From Cart",
   "time" : {
-    "start" : 1706709165801,
-    "stop" : 1706709171798,
-    "duration" : 5997
+    "start" : 1706710162842,
+    "stop" : 1706710169595,
+    "duration" : 6753
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "83fdc6bb0fd7efd6",
+  "name" : "Verify Subscription in cart page",
+  "time" : {
+    "start" : 1706710209884,
+    "stop" : 1706710212638,
+    "duration" : 2754
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "5c68abdc1a7539af",
+  "name" : "Search Products and Verify Cart After Login",
+  "time" : {
+    "start" : 1706710284074,
+    "stop" : 1706710309288,
+    "duration" : 25214
   },
   "status" : "passed",
   "severity" : "critical"

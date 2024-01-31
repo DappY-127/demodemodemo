@@ -5,85 +5,102 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Contact Us Form",
-        "uid" : "c10a7f477a1fcf56",
+        "name" : "Verify All Products and Product Detail Page",
+        "uid" : "8615f5e89d5b8f3d",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706709097421,
-          "stop" : 1706709117585,
-          "duration" : 20164
+          "start" : 1706710108993,
+          "stop" : 1706710126659,
+          "duration" : 17666
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Search Products and Verify Cart After Login",
-        "uid" : "df6ebd8ed04b8582",
+        "name" : "Add Review on Product",
+        "uid" : "2f1dc2be6cce9848",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706709269057,
-          "stop" : 1706709291477,
-          "duration" : 22420
+          "start" : 1706710170866,
+          "stop" : 1706710188167,
+          "duration" : 17301
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Verify address details in checkout page",
-        "uid" : "caa32146c1e1712c",
+        "uid" : "9978167fb2f4882e",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706709292751,
-          "stop" : 1706709311070,
-          "duration" : 18319
+          "start" : 1706710310581,
+          "stop" : 1706710334310,
+          "duration" : 23729
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Register User",
-        "uid" : "8824f640bccdb802",
+        "uid" : "b9497a229822e893",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706709312353,
-          "stop" : 1706709330180,
-          "duration" : 17827
+          "start" : 1706710335595,
+          "stop" : 1706710353234,
+          "duration" : 17639
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login User with correct email and password",
-        "uid" : "7cb8120f09370394",
+        "uid" : "30c620d3fd64760",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706709335532,
-          "stop" : 1706709353208,
-          "duration" : 17676
+          "start" : 1706710359099,
+          "stop" : 1706710376736,
+          "duration" : 17637
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Logout User",
-        "uid" : "fb012fd70f979927",
+        "uid" : "9887db10c8d92555",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706709358773,
-          "stop" : 1706709376439,
-          "duration" : 17666
+          "start" : 1706710381966,
+          "stop" : 1706710400316,
+          "duration" : 18350
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    }, {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom no such window\n  (Session info: chrome=112.0.5615.165)",
+      "children" : [ {
+        "name" : "Remove Products From Cart",
+        "uid" : "31f3cc9eecf05189",
+        "parentUid" : "5e4c46d8ea1136b0a6c2db622337ce2b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1706710159700,
+          "stop" : 1706710161457,
+          "duration" : 1757
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5e4c46d8ea1136b0a6c2db622337ce2b"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
