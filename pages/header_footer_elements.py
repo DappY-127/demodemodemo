@@ -23,8 +23,9 @@ class HeaderFooterElements():
     USER_STATUS = ('xpath', '//a[contains(text(), "Logged in as")]')
 
     AD_IFRAME = ('xpath', '//*[@id="ad_iframe"]')
-    AD_FULL_IFRAME = ('xpath', '//*[@id="ad_position_box"]')
     AD_CLOSE_BTTN = ('xpath', '//*[@id="dismiss-button"]')
+    ACTIVE_AD_IFRAME = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"] iframe')
+
 
     @allure.step("Click Signup/Login header button")
     def click_signup_login_button(self):
@@ -127,10 +128,9 @@ class HeaderFooterElements():
         # except NoSuchElementException:
         #     pass
         try:
-            ad_iframe = self.browser.find_element(*self.AD_IFRAME)
-            ad_full_frame = self.browser.find_element(*self.AD_FULL_IFRAME)
+            ad_iframe = self.browser.find_element(*self.ACTIVE_AD_IFRAME)
 
-            if ad_iframe.is_displayed() and ad_full_frame.is_displayed():
+            if ad_iframe.is_displayed():
                 with allure.step("Close Advertisement"):
                     self.browser.switch_to.frame(ad_iframe)
                     ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
@@ -140,8 +140,7 @@ class HeaderFooterElements():
                     self.make_screenshot('closed AD')
                     self.browser.switch_to.default_content()                    
                     # Wait for the page to load after closing the advertisement
-                    self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
-                    self.wait.until_not(EC.visibility_of_element_located(self.AD_FULL_IFRAME))
+                    self.wait.until_not(EC.visibility_of_element_located(self.ACTIVE_AD_IFRAME))
                     allure.attach("Advertisement Closed and Page Transition", name="Advertisement Status", attachment_type=allure.attachment_type.TEXT)
 
         except NoSuchElementException:
