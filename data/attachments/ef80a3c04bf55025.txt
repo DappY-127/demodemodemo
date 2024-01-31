@@ -1,2 +1,0 @@
-Test failed. Exception: Message: 
-. Current URL: https://automationexercise.com/account_created#google_vignette
