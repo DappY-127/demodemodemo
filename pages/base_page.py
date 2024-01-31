@@ -26,12 +26,16 @@ class BasePage(HeaderFooterElements):
     def is_opened(self):
         # with allure.step(f"Page {self.PAGE_URL} is opened"):
         #     self.wait.until(EC.url_to_be(self.PAGE_URL))
-        self.is_header_visible()
+        
+        self.check_and_close_ad_if_present()
         try:
             with allure.step(f"Page {self.PAGE_URL} is opened"):
-                self.wait.until(EC.url_to_be(self.PAGE_URL.split('#')[0]))
+                self.check_and_close_ad_if_present()
+                self.wait.until_not(EC.url_contains("#google_vignette"))
+                self.wait.until(EC.url_to_be(self.PAGE_URL))
         except Exception as e:
             current_url = self.browser.current_url
+            self.make_screenshot("Opened page")
             allure.attach(f"Test failed. Exception: {str(e)}. Current URL: {current_url}", name="Test Failure Details", attachment_type=allure.attachment_type.TEXT)
             raise
 
