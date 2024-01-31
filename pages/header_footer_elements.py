@@ -133,14 +133,16 @@ class HeaderFooterElements():
             if ad_iframe.is_displayed():
                 with allure.step("Close Advertisement"):
                     self.browser.switch_to.frame(ad_iframe)
-                    ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
-                    self.wait.until(EC.visibility_of(ad_close_button))
+                    # ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
+                    # self.wait.until(EC.visibility_of(ad_close_button))
                     self.make_screenshot('AD')
-                    ad_close_button.click()
+                    self.wait.until(EC.element_to_be_clickable(self.AD_CLOSE_BTTN)).click()
+                    # ad_close_button.click()
                     self.make_screenshot('closed AD')
                     self.browser.switch_to.default_content()                    
                     # Wait for the page to load after closing the advertisement
-                    self.wait.until_not(EC.visibility_of_element_located(self.ACTIVE_AD_IFRAME))
+                    self.wait.until_not(EC.url_contains("#google_vignette"))
+                    # self.wait.until_not(EC.visibility_of_element_located(self.ACTIVE_AD_IFRAME))
                     allure.attach("Advertisement Closed and Page Transition", name="Advertisement Status", attachment_type=allure.attachment_type.TEXT)
 
         except NoSuchElementException:
