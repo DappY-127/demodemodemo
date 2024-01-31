@@ -5,27 +5,14 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Place Order: Register while Checkout",
-        "uid" : "b95f0ae5942af718",
+        "name" : "Verify All Products and Product Detail Page",
+        "uid" : "3ca8a649467e589d",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706694810715,
-          "stop" : 1706694845097,
-          "duration" : 34382
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Register User",
-        "uid" : "4faee8ac29c52219",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706694928206,
-          "stop" : 1706694951572,
-          "duration" : 23366
+          "start" : 1706695995175,
+          "stop" : 1706696012457,
+          "duration" : 17282
         },
         "flaky" : false,
         "newFailed" : false,
