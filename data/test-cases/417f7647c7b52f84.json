@@ -1,0 +1,217 @@
+{
+  "uid" : "417f7647c7b52f84",
+  "name" : "Verify Test Cases Page",
+  "fullName" : "tests.scrolling_feature_test.TestScrollingFeature#test_verify_testcase_page",
+  "historyId" : "273aad17eb8d3a2c2195e499aa172817",
+  "time" : {
+    "start" : 1706691884069,
+    "stop" : 1706691901135,
+    "duration" : 17066
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <tests.scrolling_feature_test.TestScrollingFeature object at 0x7fbd26ca3920>\n\n    @allure.title(\"Verify Test Cases Page\")\n    @allure.severity(allure.severity_level.NORMAL)\n    @allure.tag('TestCaseID: 7')\n    def test_verify_testcase_page(self):\n        self.home_page.open()\n        self.home_page.is_header_visible()\n        self.home_page.click_testcases_button()\n>       self.test_cases_page.is_opened()\n\ntests/scrolling_feature_test.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/base_page.py:34: in is_opened\n    self.wait.until_not(EC.url_contains(\"#google_vignette\"))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"fd0ad020268924ae072563c9ad29fec4\")>\nmethod = <function url_contains.<locals>._predicate at 0x7fbd280071a0>\nmessage = ''\n\n    def until_not(self, method: Callable[[D], T], message: str = \"\") -> Union[T, Literal[True]]:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value evaluates to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`, or\n                  ``True`` if `method` has raised one of the ignored exceptions\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if not value:\n                    return value\n            except self._ignored_exceptions:\n                return True\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:128: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706691805348,
+      "stop" : 1706691805436,
+      "duration" : 88
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706691883781,
+      "stop" : 1706691884068,
+      "duration" : 287
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706691882919,
+      "stop" : 1706691883781,
+      "duration" : 862
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <tests.scrolling_feature_test.TestScrollingFeature object at 0x7fbd26ca3920>\n\n    @allure.title(\"Verify Test Cases Page\")\n    @allure.severity(allure.severity_level.NORMAL)\n    @allure.tag('TestCaseID: 7')\n    def test_verify_testcase_page(self):\n        self.home_page.open()\n        self.home_page.is_header_visible()\n        self.home_page.click_testcases_button()\n>       self.test_cases_page.is_opened()\n\ntests/scrolling_feature_test.py:45: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/base_page.py:34: in is_opened\n    self.wait.until_not(EC.url_contains(\"#google_vignette\"))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"fd0ad020268924ae072563c9ad29fec4\")>\nmethod = <function url_contains.<locals>._predicate at 0x7fbd280071a0>\nmessage = ''\n\n    def until_not(self, method: Callable[[D], T], message: str = \"\") -> Union[T, Literal[True]]:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value evaluates to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`, or\n                  ``True`` if `method` has raised one of the ignored exceptions\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if not value:\n                    return value\n            except self._ignored_exceptions:\n                return True\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:128: TimeoutException",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706691884069,
+        "stop" : 1706691885337,
+        "duration" : 1268
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1706691885338,
+        "stop" : 1706691885360,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click 'Test Cases' header button",
+      "time" : {
+        "start" : 1706691885360,
+        "stop" : 1706691885534,
+        "duration" : 174
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/test_cases is opened",
+      "time" : {
+        "start" : 1706691885542,
+        "stop" : 1706691900603,
+        "duration" : 15061
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/workspace/pages/base_page.py\", line 34, in is_opened\n    self.wait.until_not(EC.url_contains(\"#google_vignette\"))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 128, in until_not\n    raise TimeoutException(message)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "3ddb610c6e72be58",
+      "name" : "Opened page",
+      "source" : "3ddb610c6e72be58.png",
+      "type" : "image/png",
+      "size" : 551348
+    }, {
+      "uid" : "f02494a657e3315a",
+      "name" : "Test Failure Details",
+      "source" : "f02494a657e3315a.txt",
+      "type" : "text/plain",
+      "size" : 96
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706691901171,
+      "stop" : 1706691901288,
+      "duration" : 117
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Interface & Navigation"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 7"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "scrolling_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestScrollingFeature"
+  }, {
+    "name" : "host",
+    "value" : "72ca54061f8d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.scrolling_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TestCaseID: 7" ]
+  },
+  "source" : "417f7647c7b52f84.json",
+  "parameterValues" : [ ]
+}
