@@ -1,0 +1,459 @@
+{
+  "uid" : "4c83ceaf8f0b6162",
+  "name" : "Add Products in Cart",
+  "fullName" : "tests.product_management_feature_test.TestProductManagementFeature#test_add_product_to_cart",
+  "historyId" : "216ee73ee4820b87216188e982991a7a",
+  "time" : {
+    "start" : 1706709142305,
+    "stop" : 1706709148625,
+    "duration" : 6320
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706709096103,
+      "stop" : 1706709096177,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706709141149,
+      "stop" : 1706709142027,
+      "duration" : 878
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706709142027,
+      "stop" : 1706709142304,
+      "duration" : 277
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706709142305,
+        "stop" : 1706709143481,
+        "duration" : 1176
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706709143490,
+        "stop" : 1706709143500,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click products header button",
+      "time" : {
+        "start" : 1706709143500,
+        "stop" : 1706709144407,
+        "duration" : 907
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/products is opened",
+      "time" : {
+        "start" : 1706709144412,
+        "stop" : 1706709144421,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Add product: 'Sleeveless Dress' to cart",
+      "time" : {
+        "start" : 1706709144421,
+        "stop" : 1706709144874,
+        "duration" : 453
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1706709144478,
+          "stop" : 1706709144494,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Sleeveless Dress'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Hover mouse over element",
+        "time" : {
+          "start" : 1706709144494,
+          "stop" : 1706709144817,
+          "duration" : 323
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Sleeveless Dress'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_name",
+        "value" : "'Sleeveless Dress'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Click 'Continue Shopping' button",
+      "time" : {
+        "start" : 1706709144874,
+        "stop" : 1706709146001,
+        "duration" : 1127
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1706709144874,
+          "stop" : 1706709145957,
+          "duration" : 1083
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Add product: 'Winter Top' to cart",
+      "time" : {
+        "start" : 1706709146001,
+        "stop" : 1706709146355,
+        "duration" : 354
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1706709146032,
+          "stop" : 1706709146039,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Winter Top'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Hover mouse over element",
+        "time" : {
+          "start" : 1706709146039,
+          "stop" : 1706709146312,
+          "duration" : 273
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Winter Top'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_name",
+        "value" : "'Winter Top'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Click 'View Cart' button",
+      "time" : {
+        "start" : 1706709146355,
+        "stop" : 1706709148248,
+        "duration" : 1893
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1706709146355,
+          "stop" : 1706709147421,
+          "duration" : 1066
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1706709148253,
+        "stop" : 1706709148262,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Products at cart presence",
+      "time" : {
+        "start" : 1706709148262,
+        "stop" : 1706709148625,
+        "duration" : 363
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check if the cart is not empty",
+        "time" : {
+          "start" : 1706709148262,
+          "stop" : 1706709148451,
+          "duration" : 189
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ac773c47122c098",
+          "name" : "Cart Empty Check",
+          "source" : "ac773c47122c098.attach",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "99122a34a90fdeb9",
+          "name" : "Cart Product",
+          "source" : "99122a34a90fdeb9.png",
+          "type" : "image/png",
+          "size" : 85350
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Get list of product names in the cart",
+        "time" : {
+          "start" : 1706709148451,
+          "stop" : 1706709148478,
+          "duration" : 27
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "bb6c852234195131",
+          "name" : "Cart Products",
+          "source" : "bb6c852234195131.attach",
+          "type" : "text/plain",
+          "size" : 43
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "d2a41a7fa0c2f241",
+        "name" : "Products Presence Check",
+        "source" : "d2a41a7fa0c2f241.attach",
+        "type" : "text/plain",
+        "size" : 46
+      }, {
+        "uid" : "44ef03d447d49efe",
+        "name" : "Cart products",
+        "source" : "44ef03d447d49efe.png",
+        "type" : "image/png",
+        "size" : 85350
+      } ],
+      "parameters" : [ {
+        "name" : "product_names_to_check",
+        "value" : "('Sleeveless Dress', 'Winter Top')"
+      } ],
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 18,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706709148626,
+      "stop" : 1706709148741,
+      "duration" : 115
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Product Management"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "Cart & Wishlist"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 12"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "product_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductManagementFeature"
+  }, {
+    "name" : "host",
+    "value" : "43204a2bb24d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.product_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "TestCaseID: 12" ]
+  },
+  "source" : "4c83ceaf8f0b6162.json",
+  "parameterValues" : [ ]
+}

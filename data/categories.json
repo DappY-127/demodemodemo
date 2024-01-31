@@ -5,105 +5,79 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Place Order: Register while Checkout",
-        "uid" : "9ea12a71bd728aae",
+        "name" : "Contact Us Form",
+        "uid" : "c10a7f477a1fcf56",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706697011862,
-          "stop" : 1706697044115,
-          "duration" : 32253
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Place Order: Register before Checkout",
-        "uid" : "721f9897c6accf94",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706697045408,
-          "stop" : 1706697062990,
-          "duration" : 17582
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Place Order: Login before Checkout",
-        "uid" : "f32c0cf90447eecf",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706697064278,
-          "stop" : 1706697081932,
-          "duration" : 17654
+          "start" : 1706709097421,
+          "stop" : 1706709117585,
+          "duration" : 20164
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Search Products and Verify Cart After Login",
-        "uid" : "18cd7ae9781968f5",
+        "uid" : "df6ebd8ed04b8582",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706697083214,
-          "stop" : 1706697101423,
-          "duration" : 18209
+          "start" : 1706709269057,
+          "stop" : 1706709291477,
+          "duration" : 22420
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Verify address details in checkout page",
-        "uid" : "88b14036f83f76c6",
+        "uid" : "caa32146c1e1712c",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706697102697,
-          "stop" : 1706697120444,
-          "duration" : 17747
+          "start" : 1706709292751,
+          "stop" : 1706709311070,
+          "duration" : 18319
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Register User",
-        "uid" : "8ec89acde0894afb",
+        "uid" : "8824f640bccdb802",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706697121705,
-          "stop" : 1706697140348,
-          "duration" : 18643
+          "start" : 1706709312353,
+          "stop" : 1706709330180,
+          "duration" : 17827
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login User with correct email and password",
-        "uid" : "a39b19d1ca7094c2",
+        "uid" : "7cb8120f09370394",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706697145570,
-          "stop" : 1706697163704,
-          "duration" : 18134
+          "start" : 1706709335532,
+          "stop" : 1706709353208,
+          "duration" : 17676
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Logout User",
-        "uid" : "3b1cbe0b1c68661d",
+        "uid" : "fb012fd70f979927",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706697169179,
-          "stop" : 1706697187213,
-          "duration" : 18034
+          "start" : 1706709358773,
+          "stop" : 1706709376439,
+          "duration" : 17666
         },
         "flaky" : false,
         "newFailed" : false,

@@ -1,0 +1,774 @@
+{
+  "uid" : "df6ebd8ed04b8582",
+  "name" : "Search Products and Verify Cart After Login",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_products_presence_at_cart_after_login",
+  "historyId" : "175286f4eeac3c2c62d3db9badf0fe4f",
+  "time" : {
+    "start" : 1706709269057,
+    "stop" : 1706709291477,
+    "duration" : 22420
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+  "statusTrace" : "self = <tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature object at 0x7f2ba12dc470>\n\n    @allure.title(\"Search Products and Verify Cart After Login\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.story(\"Checkout Process\")\n    @allure.tag('TestCaseID: 20')\n    def test_products_presence_at_cart_after_login(self):\n>       self.account_register()\n\ntests/shopping_checkout_feature_test.py:153: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/base_test.py:69: in account_register\n    self.home_page.is_opened()\npages/base_page.py:33: in is_opened\n    self.wait.until_not(EC.url_contains(\"#google_vignette\"))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"487abe1c4a7532f681f6dd546ef943bf\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f2b9d3825c0>\nmessage = ''\n\n    def until_not(self, method: Callable[[D], T], message: str = \"\") -> Union[T, Literal[True]]:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value evaluates to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`, or\n                  ``True`` if `method` has raised one of the ignored exceptions\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if not value:\n                    return value\n            except self._ignored_exceptions:\n                return True\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:128: TimeoutException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1706709268784,
+      "stop" : 1706709269057,
+      "duration" : 273
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1706709096103,
+      "stop" : 1706709096177,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1706709267912,
+      "stop" : 1706709268784,
+      "duration" : 872
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.TimeoutException: Message:",
+    "statusTrace" : "self = <tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature object at 0x7f2ba12dc470>\n\n    @allure.title(\"Search Products and Verify Cart After Login\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.story(\"Checkout Process\")\n    @allure.tag('TestCaseID: 20')\n    def test_products_presence_at_cart_after_login(self):\n>       self.account_register()\n\ntests/shopping_checkout_feature_test.py:153: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/base_test.py:69: in account_register\n    self.home_page.is_opened()\npages/base_page.py:33: in is_opened\n    self.wait.until_not(EC.url_contains(\"#google_vignette\"))\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.support.wait.WebDriverWait (session=\"487abe1c4a7532f681f6dd546ef943bf\")>\nmethod = <function url_contains.<locals>._predicate at 0x7f2b9d3825c0>\nmessage = ''\n\n    def until_not(self, method: Callable[[D], T], message: str = \"\") -> Union[T, Literal[True]]:\n        \"\"\"Calls the method provided with the driver as an argument until the \\\n        return value evaluates to ``False``.\n    \n        :param method: callable(WebDriver)\n        :param message: optional message for :exc:`TimeoutException`\n        :returns: the result of the last call to `method`, or\n                  ``True`` if `method` has raised one of the ignored exceptions\n        :raises: :exc:`selenium.common.exceptions.TimeoutException` if timeout occurs\n        \"\"\"\n        end_time = time.monotonic() + self._timeout\n        while True:\n            try:\n                value = method(self._driver)\n                if not value:\n                    return value\n            except self._ignored_exceptions:\n                return True\n            time.sleep(self._poll)\n            if time.monotonic() > end_time:\n                break\n>       raise TimeoutException(message)\nE       selenium.common.exceptions.TimeoutException: Message:\n\n../local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py:128: TimeoutException",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1706709269057,
+        "stop" : 1706709270276,
+        "duration" : 1219
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706709270284,
+        "stop" : 1706709270294,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click Signup/Login header button",
+      "time" : {
+        "start" : 1706709270294,
+        "stop" : 1706709271043,
+        "duration" : 749
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1706709271047,
+        "stop" : 1706709271063,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter name for signup",
+      "time" : {
+        "start" : 1706709271064,
+        "stop" : 1706709271181,
+        "duration" : 117
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Jessica Austin'",
+        "time" : {
+          "start" : 1706709271064,
+          "stop" : 1706709271181,
+          "duration" : 117
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-name\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'Jessica Austin'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Enter email for signup",
+      "time" : {
+        "start" : 1706709271181,
+        "stop" : 1706709271271,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'testmail1205@mail.com'",
+        "time" : {
+          "start" : 1706709271181,
+          "stop" : 1706709271271,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'testmail1205@mail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click signup button",
+      "time" : {
+        "start" : 1706709271271,
+        "stop" : 1706709272128,
+        "duration" : 857
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/signup is opened",
+      "time" : {
+        "start" : 1706709272794,
+        "stop" : 1706709272824,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Enter Account Information' section",
+      "time" : {
+        "start" : 1706709272825,
+        "stop" : 1706709273498,
+        "duration" : 673
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'password123qwerty'",
+        "time" : {
+          "start" : 1706709272877,
+          "stop" : 1706709272960,
+          "duration" : 83
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#password')"
+        }, {
+          "name" : "value",
+          "value" : "'password123qwerty'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: '27'",
+        "time" : {
+          "start" : 1706709272960,
+          "stop" : 1706709273021,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#days')"
+        }, {
+          "name" : "option_text",
+          "value" : "'27'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: 'November'",
+        "time" : {
+          "start" : 1706709273021,
+          "stop" : 1706709273084,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#months')"
+        }, {
+          "name" : "option_text",
+          "value" : "'November'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: '1911'",
+        "time" : {
+          "start" : 1706709273084,
+          "stop" : 1706709273145,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#years')"
+        }, {
+          "name" : "option_text",
+          "value" : "'1911'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "18468a48eafe62be",
+        "name" : "Filled account information section form",
+        "source" : "18468a48eafe62be.png",
+        "type" : "image/png",
+        "size" : 331888
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 'Address Information' section",
+      "time" : {
+        "start" : 1706709273498,
+        "stop" : 1706709274561,
+        "duration" : 1063
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Donna'",
+        "time" : {
+          "start" : 1706709273498,
+          "stop" : 1706709273571,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#first_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Donna'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Randall'",
+        "time" : {
+          "start" : 1706709273571,
+          "stop" : 1706709273648,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#last_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Randall'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Escobar, Rice and Smith'",
+        "time" : {
+          "start" : 1706709273648,
+          "stop" : 1706709273742,
+          "duration" : 94
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#company')"
+        }, {
+          "name" : "value",
+          "value" : "'Escobar, Rice and Smith'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '9611 Mitchell Ford'",
+        "time" : {
+          "start" : 1706709273742,
+          "stop" : 1706709273834,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address1')"
+        }, {
+          "name" : "value",
+          "value" : "'9611 Mitchell Ford'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Apt. 778'",
+        "time" : {
+          "start" : 1706709273834,
+          "stop" : 1706709273921,
+          "duration" : 87
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address2')"
+        }, {
+          "name" : "value",
+          "value" : "'Apt. 778'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: 'Canada'",
+        "time" : {
+          "start" : 1706709273921,
+          "stop" : 1706709273996,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#country')"
+        }, {
+          "name" : "option_text",
+          "value" : "'Canada'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'California'",
+        "time" : {
+          "start" : 1706709273996,
+          "stop" : 1706709274095,
+          "duration" : 99
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#state')"
+        }, {
+          "name" : "value",
+          "value" : "'California'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'West Tonya'",
+        "time" : {
+          "start" : 1706709274095,
+          "stop" : 1706709274178,
+          "duration" : 83
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#city')"
+        }, {
+          "name" : "value",
+          "value" : "'West Tonya'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '63261'",
+        "time" : {
+          "start" : 1706709274178,
+          "stop" : 1706709274262,
+          "duration" : 84
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#zipcode')"
+        }, {
+          "name" : "value",
+          "value" : "'63261'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '626-839-3622x49774'",
+        "time" : {
+          "start" : 1706709274262,
+          "stop" : 1706709274352,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#mobile_number')"
+        }, {
+          "name" : "value",
+          "value" : "'626-839-3622x49774'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "1793cae7f5dc92d0",
+        "name" : "Filled addres section form",
+        "source" : "1793cae7f5dc92d0.png",
+        "type" : "image/png",
+        "size" : 315274
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 10,
+      "hasContent" : true
+    }, {
+      "name" : "Click create account button",
+      "time" : {
+        "start" : 1706709274561,
+        "stop" : 1706709275799,
+        "duration" : 1238
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1706709274561,
+          "stop" : 1706709274571,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', '[data-qa=\"create-account\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/account_created is opened",
+      "time" : {
+        "start" : 1706709275862,
+        "stop" : 1706709275886,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User creation message visible",
+      "time" : {
+        "start" : 1706709275887,
+        "stop" : 1706709276074,
+        "duration" : 187
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7daec45081129105",
+        "name" : "User created",
+        "source" : "7daec45081129105.png",
+        "type" : "image/png",
+        "size" : 70093
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1706709276074,
+        "stop" : 1706709276179,
+        "duration" : 105
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Close Advertisement",
+        "time" : {
+          "start" : 1706709276153,
+          "stop" : 1706709276179,
+          "duration" : 26
+        },
+        "status" : "broken",
+        "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"dismiss-button\"]\"}\n  (Session info: chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\n\n",
+        "statusTrace" : "  File \"/usr/workspace/pages/header_footer_elements.py\", line 136, in check_and_close_ad_if_present\n    ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 742, in find_element\n    return self.execute(Command.FIND_ELEMENT, {\"using\": by, \"value\": value})[\"value\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py\", line 348, in execute\n    self.error_handler.check_response(response)\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py\", line 229, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1706709276188,
+        "stop" : 1706709291232,
+        "duration" : 15044
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.TimeoutException: Message: \n\n",
+      "statusTrace" : "  File \"/usr/workspace/pages/base_page.py\", line 33, in is_opened\n    self.wait.until_not(EC.url_contains(\"#google_vignette\"))\n  File \"/usr/local/lib/python3.12/site-packages/selenium/webdriver/support/wait.py\", line 128, in until_not\n    raise TimeoutException(message)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "c44fe2e70b4bad77",
+      "name" : "Opened page",
+      "source" : "c44fe2e70b4bad77.png",
+      "type" : "image/png",
+      "size" : 152182
+    }, {
+      "uid" : "153142aa5faf21dc",
+      "name" : "Test Failure Details",
+      "source" : "153142aa5faf21dc.txt",
+      "type" : "text/plain",
+      "size" : 111
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 33,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1706709291486,
+      "stop" : 1706709291605,
+      "duration" : 119
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Checkout Process"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 20"
+  }, {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "shopping_checkout_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShoppingCheckoutFeature"
+  }, {
+    "name" : "host",
+    "value" : "43204a2bb24d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.shopping_checkout_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TestCaseID: 20" ]
+  },
+  "source" : "df6ebd8ed04b8582.json",
+  "parameterValues" : [ ]
+}
