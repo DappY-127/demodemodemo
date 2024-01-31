@@ -132,11 +132,13 @@ class HeaderFooterElements():
 
             if ad_iframe.is_displayed() and ad_full_frame.is_displayed():
                 with allure.step("Close Advertisement"):
+                    self.browser.switch_to.frame(ad_iframe)
                     ad_close_button = self.browser.find_element(*self.AD_CLOSE_BTTN)
+                    self.wait.until(EC.visibility_of(ad_close_button))
                     self.make_screenshot('AD')
                     ad_close_button.click()
                     self.make_screenshot('closed AD')
-                    
+                    self.browser.switch_to.default_content()                    
                     # Wait for the page to load after closing the advertisement
                     self.wait.until_not(EC.visibility_of_element_located(self.AD_IFRAME))
                     self.wait.until_not(EC.visibility_of_element_located(self.AD_FULL_IFRAME))
