@@ -2,60 +2,57 @@
   "e65723a6056ad021773889a9622c5514" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5cf573e956b254dd",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "8d7aa49707cd9a93",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064639938,
-        "stop" : 1707064639938,
-        "duration" : 0
+        "start" : 1707064854040,
+        "stop" : 1707064858905,
+        "duration" : 4865
       }
     } ]
   },
   "e2183dca76d5ec6cda84b0bde58e43e1" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b03ebd3b5aeaf431",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "f66eca1c0f00b3c3",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640101,
-        "stop" : 1707064640101,
-        "duration" : 0
+        "start" : 1707064938548,
+        "stop" : 1707064940311,
+        "duration" : 1763
       }
     } ]
   },
   "14660b7286c8b881f6aa8d5e2e2abc11" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "9f4076a2f1afdde2",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "dfe4732f3c997be",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640105,
-        "stop" : 1707064640105,
-        "duration" : 0
+        "start" : 1707064941579,
+        "stop" : 1707064958858,
+        "duration" : 17279
       }
     } ]
   },
@@ -69,93 +66,70 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "3650f2b5d22586bf",
+      "uid" : "6251178770bf78f3",
       "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document\n  (Session info: chrome=112.0.5615.165); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception",
       "time" : {
-        "start" : 1707064640070,
-        "stop" : 1707064640070,
-        "duration" : 0
+        "start" : 1707064899977,
+        "stop" : 1707064907844,
+        "duration" : 7867
       }
     } ]
   },
   "7ab66e62cedc2b865ece89b45e42d142" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "754e558a25c7bdab",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "c00de23171d51037",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640097,
-        "stop" : 1707064640097,
-        "duration" : 0
+        "start" : 1707064935854,
+        "stop" : 1707064937316,
+        "duration" : 1462
       }
     } ]
   },
   "025b641d7a5747020be356a32adf7aeb" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6906c9428689bc32",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "d89c997f8464cc9b",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640059,
-        "stop" : 1707064640059,
-        "duration" : 0
+        "start" : 1707064882162,
+        "stop" : 1707064886441,
+        "duration" : 4279
       }
     } ]
   },
   "369b26e0b074ee60dc667df2a87ebd1b" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "34864906b5e7e045",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "5c3b39c67423efdb",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640131,
-        "stop" : 1707064640131,
-        "duration" : 0
-      }
-    } ]
-  },
-  "31bdb85256e06926e44c95b61d75e9dc" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "7a8c0d4e94430855",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
-      "time" : {
-        "start" : 1707064640120,
-        "stop" : 1707064640120,
-        "duration" : 0
+        "start" : 1707065072874,
+        "stop" : 1707065075681,
+        "duration" : 2807
       }
     } ]
   },
@@ -169,33 +143,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "a8556c425ea06813",
+      "uid" : "67fdaaac123a3ad6",
       "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1707064640143,
-        "stop" : 1707064640143,
-        "duration" : 0
+        "start" : 1707065099791,
+        "stop" : 1707065117005,
+        "duration" : 17214
+      }
+    } ]
+  },
+  "31bdb85256e06926e44c95b61d75e9dc" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ba687118254771d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707065020932,
+        "stop" : 1707065035777,
+        "duration" : 14845
       }
     } ]
   },
   "56c054bcd44e5f7cf9af5c46a7e0141d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c2d3a740028d1906",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "fca0995d673bf722",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640066,
-        "stop" : 1707064640066,
-        "duration" : 0
+        "start" : 1707064894677,
+        "stop" : 1707064898667,
+        "duration" : 3990
       }
     } ]
   },
@@ -209,253 +201,241 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b3cdd7288b1197d2",
+      "uid" : "82d9fcc3524ab80c",
       "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1707064640127,
-        "stop" : 1707064640127,
-        "duration" : 0
+        "start" : 1707065054004,
+        "stop" : 1707065071598,
+        "duration" : 17594
       }
     } ]
   },
   "175286f4eeac3c2c62d3db9badf0fe4f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "55555608f809bb03",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "f71d2c9170f10e1c",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640116,
-        "stop" : 1707064640116,
-        "duration" : 0
+        "start" : 1707064998144,
+        "stop" : 1707065019602,
+        "duration" : 21458
       }
     } ]
   },
   "7e2311b04eea09747d60cf411bd8827f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e77f9444603deed8",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "42029354d2e5f44a",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640108,
-        "stop" : 1707064640108,
-        "duration" : 0
+        "start" : 1707064960149,
+        "stop" : 1707064976532,
+        "duration" : 16383
       }
     } ]
   },
   "f348e6fd044b53ac7610866cf3c2ac85" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e65d89096f06ee46",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "eb7893f4da74f29f",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640074,
-        "stop" : 1707064640074,
-        "duration" : 0
+        "start" : 1707064909166,
+        "stop" : 1707064915912,
+        "duration" : 6746
       }
     } ]
   },
   "a2a722660d4a8e19e27d71a976857ddf" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "ccc1c196d4ab2f43",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "f9109e836f430201",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640078,
-        "stop" : 1707064640078,
-        "duration" : 0
+        "start" : 1707064917160,
+        "stop" : 1707064920185,
+        "duration" : 3025
       }
     } ]
   },
   "e55e2346f2ef98808b004defc91442b8" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "59a79fedab1cb03d",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "e4e34aaba48f32ec",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640047,
-        "stop" : 1707064640047,
-        "duration" : 0
+        "start" : 1707064860196,
+        "stop" : 1707064863539,
+        "duration" : 3343
       }
     } ]
   },
   "366b782c34cd001d7cc2586de94c855f" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "e1590c165394487f",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "7278db46d345218f",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640089,
-        "stop" : 1707064640089,
-        "duration" : 0
+        "start" : 1707064929322,
+        "stop" : 1707064930958,
+        "duration" : 1636
       }
     } ]
   },
   "cca359011c33e2aa24219583db2c88b9" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "745b9717f192dd81",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "95ee14fa9a1c0fc5",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640081,
-        "stop" : 1707064640081,
-        "duration" : 0
+        "start" : 1707064921428,
+        "stop" : 1707064924186,
+        "duration" : 2758
       }
     } ]
   },
   "216ee73ee4820b87216188e982991a7a" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "6253bba137e3dc1",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "2a775357dd6b8c70",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640062,
-        "stop" : 1707064640062,
-        "duration" : 0
+        "start" : 1707064887686,
+        "stop" : 1707064893416,
+        "duration" : 5730
       }
     } ]
   },
   "273aad17eb8d3a2c2195e499aa172817" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "1ff3a9ccda1428d1",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "2daff2a086d1b940",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640093,
-        "stop" : 1707064640093,
-        "duration" : 0
-      }
-    } ]
-  },
-  "a8f05a3f4cc1ba834b85a24227491749" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "b6f4427f39676608",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
-      "time" : {
-        "start" : 1707064640051,
-        "stop" : 1707064640051,
-        "duration" : 0
+        "start" : 1707064932230,
+        "stop" : 1707064934586,
+        "duration" : 2356
       }
     } ]
   },
   "2f7096fce89574c25aa4fe6eb02124c9" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "be073a9f5d51c214",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "9494fd29c5f04fc7",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640055,
-        "stop" : 1707064640055,
-        "duration" : 0
+        "start" : 1707064877390,
+        "stop" : 1707064880917,
+        "duration" : 3527
+      }
+    } ]
+  },
+  "a8f05a3f4cc1ba834b85a24227491749" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d7d47a6a89e822e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707064864812,
+        "stop" : 1707064876138,
+        "duration" : 11326
       }
     } ]
   },
   "b9c807418a093b7bc6f5975e51ed13bc" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "5654acd886752d83",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "a818fe51b437335",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640112,
-        "stop" : 1707064640112,
-        "duration" : 0
+        "start" : 1707064977807,
+        "stop" : 1707064996892,
+        "duration" : 19085
       }
     } ]
   },
@@ -469,33 +449,51 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "86ad6d914d5e01cb",
+      "uid" : "443afb85854bf2e8",
       "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "statusDetails" : "selenium.common.exceptions.TimeoutException: Message:",
       "time" : {
-        "start" : 1707064640135,
-        "stop" : 1707064640135,
-        "duration" : 0
+        "start" : 1707065076948,
+        "stop" : 1707065094423,
+        "duration" : 17475
       }
     } ]
   },
   "812571f40d6906b321564172fa11f79d" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 0,
       "skipped" : 0,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 1
     },
     "items" : [ {
-      "uid" : "51373b3268acfda8",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "uid" : "ba4a1c8b1b6f14b5",
+      "status" : "passed",
       "time" : {
-        "start" : 1707064640085,
-        "stop" : 1707064640085,
-        "duration" : 0
+        "start" : 1707064925463,
+        "stop" : 1707064928032,
+        "duration" : 2569
+      }
+    } ]
+  },
+  "cb50349330fe984789b930084c4e54df" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "853b2610195135ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707065095683,
+        "stop" : 1707065098518,
+        "duration" : 2835
       }
     } ]
   },
@@ -509,33 +507,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "becaa6d059b8e489",
+      "uid" : "797ac83b48c1be8c",
       "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+      "statusDetails" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'",
       "time" : {
-        "start" : 1707064640124,
-        "stop" : 1707064640124,
-        "duration" : 0
-      }
-    } ]
-  },
-  "cb50349330fe984789b930084c4e54df" : {
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 1
-    },
-    "items" : [ {
-      "uid" : "ed367c09b4a6bed3",
-      "status" : "broken",
-      "statusDetails" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
-      "time" : {
-        "start" : 1707064640139,
-        "stop" : 1707064640139,
-        "duration" : 0
+        "start" : 1707065037040,
+        "stop" : 1707065052644,
+        "duration" : 15604
       }
     } ]
   }

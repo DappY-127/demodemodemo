@@ -1,0 +1,1542 @@
+{
+  "uid" : "797ac83b48c1be8c",
+  "name" : "Download Invoice after purchase order",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_invoice_download_after_order_purchase",
+  "historyId" : "25bee94c8c5ea62231430ed99bae6557",
+  "time" : {
+    "start" : 1707065037040,
+    "stop" : 1707065052644,
+    "duration" : 15604
+  },
+  "status" : "broken",
+  "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'",
+  "statusTrace" : "self = <tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature object at 0x7f3eab25ed20>\n\n    @allure.title(\"Download Invoice after purchase order\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.story(\"Checkout Process\")\n    @allure.tag('TestCaseID: 24')\n    def test_invoice_download_after_order_purchase(self):\n        self.account_register()\n    \n        self.home_page.click_products_button()\n        self.products_page.is_opened()\n        self.products_page.add_product_to_cart_by_name('Green Side Placket Detail T-Shirt')\n        self.products_page.click_view_cart_bttn()\n        self.cart_page.is_opened()\n        self.cart_page.is_cart_products_present('Green Side Placket Detail T-Shirt')\n        self.cart_page.click_proceed_to_checkout_bttn()\n        self.checkout_page.is_opened()\n        self.checkout_page.is_delivery_address_visible()\n        self.checkout_page.is_billing_address_visible()\n        self.checkout_page.verify_delivery_address_info()\n        self.checkout_page.verify_billing_address_info()\n        self.checkout_page.fill_order_commnets()\n        self.checkout_page.click_place_order_button()\n        self.payment_page.is_payments_label_visible()\n        self.payment_page.fill_payment_details_section()\n        self.payment_page.click_confirm_order_button()\n        self.order_placement_page.is_order_placed_message_visible()\n>       self.order_placement_page.click_download_invoice_button()\n\ntests/shopping_checkout_feature_test.py:233: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/order_placement_page.py:25: in click_download_invoice_button\n    self.is_file_present(downloaded_file_path)\npages/order_placement_page.py:36: in is_file_present\n    allure.attach.file(file_path, name=\"Missing File Screenshot\", attachment_type=allure.attachment_type.PNG)\n../local/lib/python3.12/site-packages/allure_commons/_allure.py:203: in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\n../local/lib/python3.12/site-packages/pluggy/_hooks.py:493: in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n../local/lib/python3.12/site-packages/pluggy/_manager.py:115: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n../local/lib/python3.12/site-packages/allure_pytest/listener.py:253: in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\n../local/lib/python3.12/site-packages/allure_commons/reporter.py:160: in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\n../local/lib/python3.12/site-packages/pluggy/_hooks.py:493: in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n../local/lib/python3.12/site-packages/pluggy/_manager.py:115: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n../local/lib/python3.12/site-packages/allure_commons/logger.py:44: in report_attached_file\n    shutil.copy2(source, destination)\n../local/lib/python3.12/shutil.py:434: in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nsrc = '/usr/workspace/pages/resources/invoice.txt'\ndst = PosixPath('/usr/workspace/allure-results/2f097cfb-a0b7-4e03-95f7-e59fc8f3dbe7-attachment.png')\n\n    def copyfile(src, dst, *, follow_symlinks=True):\n        \"\"\"Copy data from src to dst in the most efficient way possible.\n    \n        If follow_symlinks is not set and src is a symbolic link, a new\n        symlink will be created instead of copying the file it points to.\n    \n        \"\"\"\n        sys.audit(\"shutil.copyfile\", src, dst)\n    \n        if _samefile(src, dst):\n            raise SameFileError(\"{!r} and {!r} are the same file\".format(src, dst))\n    \n        file_size = 0\n        for i, fn in enumerate([src, dst]):\n            try:\n                st = _stat(fn)\n            except OSError:\n                # File most likely does not exist\n                pass\n            else:\n                # XXX What about other special files? (sockets, devices...)\n                if stat.S_ISFIFO(st.st_mode):\n                    fn = fn.path if isinstance(fn, os.DirEntry) else fn\n                    raise SpecialFileError(\"`%s` is a named pipe\" % fn)\n                if _WINDOWS and i == 0:\n                    file_size = st.st_size\n    \n        if not follow_symlinks and _islink(src):\n            os.symlink(os.readlink(src), dst)\n        else:\n>           with open(src, 'rb') as fsrc:\nE           FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'\n\n../local/lib/python3.12/shutil.py:254: FileNotFoundError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1707064852645,
+      "stop" : 1707064852719,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1707065035903,
+      "stop" : 1707065036766,
+      "duration" : 863
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1707065036766,
+      "stop" : 1707065037039,
+      "duration" : 273
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'",
+    "statusTrace" : "self = <tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature object at 0x7f3eab25ed20>\n\n    @allure.title(\"Download Invoice after purchase order\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.story(\"Checkout Process\")\n    @allure.tag('TestCaseID: 24')\n    def test_invoice_download_after_order_purchase(self):\n        self.account_register()\n    \n        self.home_page.click_products_button()\n        self.products_page.is_opened()\n        self.products_page.add_product_to_cart_by_name('Green Side Placket Detail T-Shirt')\n        self.products_page.click_view_cart_bttn()\n        self.cart_page.is_opened()\n        self.cart_page.is_cart_products_present('Green Side Placket Detail T-Shirt')\n        self.cart_page.click_proceed_to_checkout_bttn()\n        self.checkout_page.is_opened()\n        self.checkout_page.is_delivery_address_visible()\n        self.checkout_page.is_billing_address_visible()\n        self.checkout_page.verify_delivery_address_info()\n        self.checkout_page.verify_billing_address_info()\n        self.checkout_page.fill_order_commnets()\n        self.checkout_page.click_place_order_button()\n        self.payment_page.is_payments_label_visible()\n        self.payment_page.fill_payment_details_section()\n        self.payment_page.click_confirm_order_button()\n        self.order_placement_page.is_order_placed_message_visible()\n>       self.order_placement_page.click_download_invoice_button()\n\ntests/shopping_checkout_feature_test.py:233: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/order_placement_page.py:25: in click_download_invoice_button\n    self.is_file_present(downloaded_file_path)\npages/order_placement_page.py:36: in is_file_present\n    allure.attach.file(file_path, name=\"Missing File Screenshot\", attachment_type=allure.attachment_type.PNG)\n../local/lib/python3.12/site-packages/allure_commons/_allure.py:203: in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\n../local/lib/python3.12/site-packages/pluggy/_hooks.py:493: in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n../local/lib/python3.12/site-packages/pluggy/_manager.py:115: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n../local/lib/python3.12/site-packages/allure_pytest/listener.py:253: in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\n../local/lib/python3.12/site-packages/allure_commons/reporter.py:160: in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\n../local/lib/python3.12/site-packages/pluggy/_hooks.py:493: in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n../local/lib/python3.12/site-packages/pluggy/_manager.py:115: in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n../local/lib/python3.12/site-packages/allure_commons/logger.py:44: in report_attached_file\n    shutil.copy2(source, destination)\n../local/lib/python3.12/shutil.py:434: in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nsrc = '/usr/workspace/pages/resources/invoice.txt'\ndst = PosixPath('/usr/workspace/allure-results/2f097cfb-a0b7-4e03-95f7-e59fc8f3dbe7-attachment.png')\n\n    def copyfile(src, dst, *, follow_symlinks=True):\n        \"\"\"Copy data from src to dst in the most efficient way possible.\n    \n        If follow_symlinks is not set and src is a symbolic link, a new\n        symlink will be created instead of copying the file it points to.\n    \n        \"\"\"\n        sys.audit(\"shutil.copyfile\", src, dst)\n    \n        if _samefile(src, dst):\n            raise SameFileError(\"{!r} and {!r} are the same file\".format(src, dst))\n    \n        file_size = 0\n        for i, fn in enumerate([src, dst]):\n            try:\n                st = _stat(fn)\n            except OSError:\n                # File most likely does not exist\n                pass\n            else:\n                # XXX What about other special files? (sockets, devices...)\n                if stat.S_ISFIFO(st.st_mode):\n                    fn = fn.path if isinstance(fn, os.DirEntry) else fn\n                    raise SpecialFileError(\"`%s` is a named pipe\" % fn)\n                if _WINDOWS and i == 0:\n                    file_size = st.st_size\n    \n        if not follow_symlinks and _islink(src):\n            os.symlink(os.readlink(src), dst)\n        else:\n>           with open(src, 'rb') as fsrc:\nE           FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'\n\n../local/lib/python3.12/shutil.py:254: FileNotFoundError",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1707065037040,
+        "stop" : 1707065037970,
+        "duration" : 930
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1707065037970,
+        "stop" : 1707065037985,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click Signup/Login header button",
+      "time" : {
+        "start" : 1707065037985,
+        "stop" : 1707065038464,
+        "duration" : 479
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1707065038464,
+        "stop" : 1707065038473,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Enter name for signup",
+      "time" : {
+        "start" : 1707065038473,
+        "stop" : 1707065038596,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Gregory Morgan'",
+        "time" : {
+          "start" : 1707065038473,
+          "stop" : 1707065038596,
+          "duration" : 123
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-name\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'Gregory Morgan'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Enter email for signup",
+      "time" : {
+        "start" : 1707065038596,
+        "stop" : 1707065038688,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'testmail6619@mail.com'",
+        "time" : {
+          "start" : 1707065038596,
+          "stop" : 1707065038688,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'testmail6619@mail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Click signup button",
+      "time" : {
+        "start" : 1707065038688,
+        "stop" : 1707065039495,
+        "duration" : 807
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://automationexercise.com/signup is opened",
+      "time" : {
+        "start" : 1707065039495,
+        "stop" : 1707065039505,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Fill 'Enter Account Information' section",
+      "time" : {
+        "start" : 1707065039505,
+        "stop" : 1707065040124,
+        "duration" : 619
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'password123qwerty'",
+        "time" : {
+          "start" : 1707065039616,
+          "stop" : 1707065039712,
+          "duration" : 96
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#password')"
+        }, {
+          "name" : "value",
+          "value" : "'password123qwerty'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Select option with value: '19'",
+        "time" : {
+          "start" : 1707065039712,
+          "stop" : 1707065039767,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#days')"
+        }, {
+          "name" : "option_text",
+          "value" : "'19'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Select option with value: 'April'",
+        "time" : {
+          "start" : 1707065039767,
+          "stop" : 1707065039823,
+          "duration" : 56
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#months')"
+        }, {
+          "name" : "option_text",
+          "value" : "'April'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Select option with value: '1982'",
+        "time" : {
+          "start" : 1707065039823,
+          "stop" : 1707065039880,
+          "duration" : 57
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#years')"
+        }, {
+          "name" : "option_text",
+          "value" : "'1982'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "aa965965c57178d2",
+        "name" : "Filled account information section form",
+        "source" : "aa965965c57178d2.png",
+        "type" : "image/png",
+        "size" : 62559
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 4
+    }, {
+      "name" : "Fill 'Address Information' section",
+      "time" : {
+        "start" : 1707065040124,
+        "stop" : 1707065041074,
+        "duration" : 950
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Michelle'",
+        "time" : {
+          "start" : 1707065040124,
+          "stop" : 1707065040199,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#first_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Michelle'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: 'Huff'",
+        "time" : {
+          "start" : 1707065040199,
+          "stop" : 1707065040272,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#last_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Huff'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: 'Clark Ltd'",
+        "time" : {
+          "start" : 1707065040272,
+          "stop" : 1707065040357,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#company')"
+        }, {
+          "name" : "value",
+          "value" : "'Clark Ltd'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '99574 Cochran Alley Apt. 799'",
+        "time" : {
+          "start" : 1707065040357,
+          "stop" : 1707065040458,
+          "duration" : 101
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address1')"
+        }, {
+          "name" : "value",
+          "value" : "'99574 Cochran Alley Apt. 799'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: 'Apt. 226'",
+        "time" : {
+          "start" : 1707065040458,
+          "stop" : 1707065040545,
+          "duration" : 87
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address2')"
+        }, {
+          "name" : "value",
+          "value" : "'Apt. 226'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Select option with value: 'Canada'",
+        "time" : {
+          "start" : 1707065040545,
+          "stop" : 1707065040608,
+          "duration" : 63
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#country')"
+        }, {
+          "name" : "option_text",
+          "value" : "'Canada'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: 'Michigan'",
+        "time" : {
+          "start" : 1707065040608,
+          "stop" : 1707065040689,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#state')"
+        }, {
+          "name" : "value",
+          "value" : "'Michigan'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: 'Tiffanyport'",
+        "time" : {
+          "start" : 1707065040689,
+          "stop" : 1707065040774,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#city')"
+        }, {
+          "name" : "value",
+          "value" : "'Tiffanyport'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '98728'",
+        "time" : {
+          "start" : 1707065040774,
+          "stop" : 1707065040851,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#zipcode')"
+        }, {
+          "name" : "value",
+          "value" : "'98728'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '5122533288'",
+        "time" : {
+          "start" : 1707065040851,
+          "stop" : 1707065040932,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#mobile_number')"
+        }, {
+          "name" : "value",
+          "value" : "'5122533288'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "71e2124e1f3ed30c",
+        "name" : "Filled addres section form",
+        "source" : "71e2124e1f3ed30c.png",
+        "type" : "image/png",
+        "size" : 39282
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 10
+    }, {
+      "name" : "Click create account button",
+      "time" : {
+        "start" : 1707065041074,
+        "stop" : 1707065041742,
+        "duration" : 668
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707065041074,
+          "stop" : 1707065041085,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', '[data-qa=\"create-account\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Page https://automationexercise.com/account_created is opened",
+      "time" : {
+        "start" : 1707065041742,
+        "stop" : 1707065041751,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "User creation message visible",
+      "time" : {
+        "start" : 1707065041751,
+        "stop" : 1707065041958,
+        "duration" : 207
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dbfc6104ee87ee89",
+        "name" : "User created",
+        "source" : "dbfc6104ee87ee89.png",
+        "type" : "image/png",
+        "size" : 70093
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1707065041958,
+        "stop" : 1707065043056,
+        "duration" : 1098
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1707065043056,
+        "stop" : 1707065043075,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "User name header visible",
+      "time" : {
+        "start" : 1707065043075,
+        "stop" : 1707065043133,
+        "duration" : 58
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Verify user status text",
+      "time" : {
+        "start" : 1707065043133,
+        "stop" : 1707065043173,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify user status text is correct for user Gregory Morgan",
+        "time" : {
+          "start" : 1707065043173,
+          "stop" : 1707065043173,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Click products header button",
+      "time" : {
+        "start" : 1707065043173,
+        "stop" : 1707065044980,
+        "duration" : 1807
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Close Advertisement",
+        "time" : {
+          "start" : 1707065043332,
+          "stop" : 1707065044980,
+          "duration" : 1648
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ec40845509dcfbba",
+          "name" : "Advertisement Status",
+          "source" : "ec40845509dcfbba.txt",
+          "type" : "text/plain",
+          "size" : 20
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Page https://automationexercise.com/products is opened",
+      "time" : {
+        "start" : 1707065044980,
+        "stop" : 1707065044992,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Add product: 'Green Side Placket Detail T-Shirt' to cart",
+      "time" : {
+        "start" : 1707065044992,
+        "stop" : 1707065045483,
+        "duration" : 491
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707065045087,
+          "stop" : 1707065045095,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Green Side Placket Detail T-Shirt'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Hover mouse over element",
+        "time" : {
+          "start" : 1707065045095,
+          "stop" : 1707065045430,
+          "duration" : 335
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Green Side Placket Detail T-Shirt'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_name",
+        "value" : "'Green Side Placket Detail T-Shirt'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Click 'View Cart' button",
+      "time" : {
+        "start" : 1707065045483,
+        "stop" : 1707065047287,
+        "duration" : 1804
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1707065045483,
+          "stop" : 1707065046577,
+          "duration" : 1094
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1707065047287,
+        "stop" : 1707065047304,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Products at cart presence",
+      "time" : {
+        "start" : 1707065047304,
+        "stop" : 1707065047660,
+        "duration" : 356
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check if the cart is not empty",
+        "time" : {
+          "start" : 1707065047304,
+          "stop" : 1707065047497,
+          "duration" : 193
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a0cc1ddf0a652cc1",
+          "name" : "Cart Empty Check",
+          "source" : "a0cc1ddf0a652cc1.attach",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "b742c03650eaba0e",
+          "name" : "Cart Product",
+          "source" : "b742c03650eaba0e.png",
+          "type" : "image/png",
+          "size" : 76036
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Get list of product names in the cart",
+        "time" : {
+          "start" : 1707065047497,
+          "stop" : 1707065047515,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "866f1f874c385b21",
+          "name" : "Cart Products",
+          "source" : "866f1f874c385b21.attach",
+          "type" : "text/plain",
+          "size" : 48
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "28a7ded5b750e65b",
+        "name" : "Products Presence Check",
+        "source" : "28a7ded5b750e65b.attach",
+        "type" : "text/plain",
+        "size" : 51
+      }, {
+        "uid" : "fa416d30429719c7",
+        "name" : "Cart products",
+        "source" : "fa416d30429719c7.png",
+        "type" : "image/png",
+        "size" : 76036
+      } ],
+      "parameters" : [ {
+        "name" : "product_names_to_check",
+        "value" : "('Green Side Placket Detail T-Shirt',)"
+      } ],
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Click 'Proceed To Checkout' button",
+      "time" : {
+        "start" : 1707065047660,
+        "stop" : 1707065048539,
+        "duration" : 879
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Page https://automationexercise.com/checkout is opened",
+      "time" : {
+        "start" : 1707065048539,
+        "stop" : 1707065048548,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "'YOUR DELIVERY ADDRESS' information block visible",
+      "time" : {
+        "start" : 1707065048548,
+        "stop" : 1707065048742,
+        "duration" : 194
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "65077e55d264155d",
+        "name" : "Delivery Address",
+        "source" : "65077e55d264155d.png",
+        "type" : "image/png",
+        "size" : 89287
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "'YOUR BILLING ADDRESS' information block visible",
+      "time" : {
+        "start" : 1707065048742,
+        "stop" : 1707065048894,
+        "duration" : 152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e03ec700386c0202",
+        "name" : "Billing Address",
+        "source" : "e03ec700386c0202.png",
+        "type" : "image/png",
+        "size" : 89287
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Verify delifery address information",
+      "time" : {
+        "start" : 1707065048894,
+        "stop" : 1707065049000,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify name information",
+        "time" : {
+          "start" : 1707065049000,
+          "stop" : 1707065049000,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Verify address information",
+        "time" : {
+          "start" : 1707065049000,
+          "stop" : 1707065049000,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Verify country and phone information",
+        "time" : {
+          "start" : 1707065049000,
+          "stop" : 1707065049000,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Verify billing address information",
+      "time" : {
+        "start" : 1707065049001,
+        "stop" : 1707065049103,
+        "duration" : 102
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify name information",
+        "time" : {
+          "start" : 1707065049103,
+          "stop" : 1707065049103,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Verify address information",
+        "time" : {
+          "start" : 1707065049103,
+          "stop" : 1707065049103,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      }, {
+        "name" : "Verify country and phone information",
+        "time" : {
+          "start" : 1707065049103,
+          "stop" : 1707065049103,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 3
+    }, {
+      "name" : "Fill order comment",
+      "time" : {
+        "start" : 1707065049103,
+        "stop" : 1707065049430,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707065049103,
+          "stop" : 1707065049116,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', \"#ordermsg [name='message']\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: 'Kid product among. Game understand these official party hope country somebody. And summer woman go room wind remain.'",
+        "time" : {
+          "start" : 1707065049116,
+          "stop" : 1707065049273,
+          "duration" : 157
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"#ordermsg [name='message']\")"
+        }, {
+          "name" : "value",
+          "value" : "'Kid product among. Game understand these official party hope country somebody. And summer woman go room wind remain.'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "ce87278cb47be10b",
+        "name" : "Order comments",
+        "source" : "ce87278cb47be10b.png",
+        "type" : "image/png",
+        "size" : 77542
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    }, {
+      "name" : "Click 'Place Order' button",
+      "time" : {
+        "start" : 1707065049430,
+        "stop" : 1707065050131,
+        "duration" : 701
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707065049430,
+          "stop" : 1707065049440,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', \"[href='/payment']\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 1
+    }, {
+      "name" : "Payment label visible",
+      "time" : {
+        "start" : 1707065050131,
+        "stop" : 1707065050315,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d1c86ff5079e6098",
+        "name" : "Payment Label",
+        "source" : "d1c86ff5079e6098.png",
+        "type" : "image/png",
+        "size" : 62164
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Fill 'Enter payment details' section",
+      "time" : {
+        "start" : 1707065050316,
+        "stop" : 1707065050877,
+        "duration" : 561
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Michelle Huff'",
+        "time" : {
+          "start" : 1707065050316,
+          "stop" : 1707065050401,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='name-on-card']\")"
+        }, {
+          "name" : "value",
+          "value" : "'Michelle Huff'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '3532833956067883'",
+        "time" : {
+          "start" : 1707065050401,
+          "stop" : 1707065050488,
+          "duration" : 87
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='card-number']\")"
+        }, {
+          "name" : "value",
+          "value" : "'3532833956067883'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '220'",
+        "time" : {
+          "start" : 1707065050488,
+          "stop" : 1707065050568,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='cvc']\")"
+        }, {
+          "name" : "value",
+          "value" : "'220'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '05'",
+        "time" : {
+          "start" : 1707065050568,
+          "stop" : 1707065050646,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='expiry-month']\")"
+        }, {
+          "name" : "value",
+          "value" : "'05'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      }, {
+        "name" : "Fill field with value: '1969'",
+        "time" : {
+          "start" : 1707065050646,
+          "stop" : 1707065050725,
+          "duration" : 79
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='expiry-year']\")"
+        }, {
+          "name" : "value",
+          "value" : "'1969'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 0
+      } ],
+      "attachments" : [ {
+        "uid" : "a6b27186298634fa",
+        "name" : "Filled card information section form",
+        "source" : "a6b27186298634fa.png",
+        "type" : "image/png",
+        "size" : 65751
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 5
+    }, {
+      "name" : "Click confirm order button",
+      "time" : {
+        "start" : 1707065050877,
+        "stop" : 1707065052364,
+        "duration" : 1487
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Order placement message visible",
+      "time" : {
+        "start" : 1707065052364,
+        "stop" : 1707065052542,
+        "duration" : 178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ddaf8ad4f538fd01",
+        "name" : "Order Placed",
+        "source" : "ddaf8ad4f538fd01.png",
+        "type" : "image/png",
+        "size" : 60625
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Click 'Download Invoice' button",
+      "time" : {
+        "start" : 1707065052542,
+        "stop" : 1707065052640,
+        "duration" : 98
+      },
+      "status" : "broken",
+      "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/order_placement_page.py\", line 25, in click_download_invoice_button\n    self.is_file_present(downloaded_file_path)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/order_placement_page.py\", line 36, in is_file_present\n    allure.attach.file(file_path, name=\"Missing File Screenshot\", attachment_type=allure.attachment_type.PNG)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 203, in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_hooks.py\", line 493, in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_manager.py\", line 115, in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 113, in _multicall\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/allure_pytest/listener.py\", line 253, in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/reporter.py\", line 160, in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_hooks.py\", line 493, in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_manager.py\", line 115, in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 113, in _multicall\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/logger.py\", line 44, in report_attached_file\n    shutil.copy2(source, destination)\n  File \"/usr/local/lib/python3.12/shutil.py\", line 434, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"/usr/local/lib/python3.12/shutil.py\", line 254, in copyfile\n    with open(src, 'rb') as fsrc:\n         ^^^^^^^^^^^^^^^\n",
+      "steps" : [ {
+        "name" : "Invoice downloaded",
+        "time" : {
+          "start" : 1707065052634,
+          "stop" : 1707065052638,
+          "duration" : 4
+        },
+        "status" : "broken",
+        "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'\n",
+        "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/order_placement_page.py\", line 36, in is_file_present\n    allure.attach.file(file_path, name=\"Missing File Screenshot\", attachment_type=allure.attachment_type.PNG)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 203, in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_hooks.py\", line 493, in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_manager.py\", line 115, in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 113, in _multicall\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/allure_pytest/listener.py\", line 253, in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/reporter.py\", line 160, in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_hooks.py\", line 493, in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_manager.py\", line 115, in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 113, in _multicall\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/logger.py\", line 44, in report_attached_file\n    shutil.copy2(source, destination)\n  File \"/usr/local/lib/python3.12/shutil.py\", line 434, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"/usr/local/lib/python3.12/shutil.py\", line 254, in copyfile\n    with open(src, 'rb') as fsrc:\n         ^^^^^^^^^^^^^^^\n",
+        "steps" : [ {
+          "name" : "Verify the presence of the file at /usr/workspace/pages/resources/invoice.txt",
+          "time" : {
+            "start" : 1707065052634,
+            "stop" : 1707065052634,
+            "duration" : 0
+          },
+          "status" : "broken",
+          "statusMessage" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'\n",
+          "statusTrace" : "  File \"/usr/workspace/pages/order_placement_page.py\", line 36, in is_file_present\n    allure.attach.file(file_path, name=\"Missing File Screenshot\", attachment_type=allure.attachment_type.PNG)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 203, in file\n    plugin_manager.hook.attach_file(source=source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_hooks.py\", line 493, in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_manager.py\", line 115, in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 113, in _multicall\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/allure_pytest/listener.py\", line 253, in attach_file\n    self.allure_logger.attach_file(uuid4(), source, name=name, attachment_type=attachment_type, extension=extension)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/reporter.py\", line 160, in attach_file\n    plugin_manager.hook.report_attached_file(source=source, file_name=file_name)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_hooks.py\", line 493, in __call__\n    return self._hookexec(self.name, self._hookimpls, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_manager.py\", line 115, in _hookexec\n    return self._inner_hookexec(hook_name, methods, kwargs, firstresult)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 113, in _multicall\n    raise exception.with_traceback(exception.__traceback__)\n  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/logger.py\", line 44, in report_attached_file\n    shutil.copy2(source, destination)\n  File \"/usr/local/lib/python3.12/shutil.py\", line 434, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"/usr/local/lib/python3.12/shutil.py\", line 254, in copyfile\n    with open(src, 'rb') as fsrc:\n         ^^^^^^^^^^^^^^^\n",
+          "steps" : [ ],
+          "attachments" : [ {
+            "name" : "Missing File Screenshot",
+            "type" : "image/png",
+            "size" : 0
+          } ],
+          "parameters" : [ ],
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : true,
+          "hasContent" : true,
+          "stepsCount" : 0
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "file_path",
+          "value" : "'/usr/workspace/pages/resources/invoice.txt'"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true,
+        "stepsCount" : 1
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 2
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 16,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 76
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1707065052716,
+      "stop" : 1707065052841,
+      "duration" : 125
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "Checkout Process"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 24"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "shopping_checkout_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShoppingCheckoutFeature"
+  }, {
+    "name" : "host",
+    "value" : "d52989e04d7f"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.shopping_checkout_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TestCaseID: 24" ]
+  },
+  "source" : "797ac83b48c1be8c.json",
+  "parameterValues" : [ ]
+}
