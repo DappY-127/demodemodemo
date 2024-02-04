@@ -1,0 +1,106 @@
+{
+  "uid" : "34864906b5e7e045",
+  "name" : "Register User with existing email",
+  "fullName" : "tests.user_management_feature_test.TestRegistrationFeature#test_register_user_with_existing_email",
+  "historyId" : "369b26e0b074ee60dc667df2a87ebd1b",
+  "time" : {
+    "start" : 1707064640131,
+    "stop" : 1707064640131,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+  "statusTrace" : "request = <SubRequest 'browser' for <Function test_register_user_with_existing_email>>\n\n    @pytest.fixture(scope=\"function\", autouse=True)\n    def browser(request):\n        # preferences = {\"download.default_directory\": \"/usr/workspace/pages/resources\"}\n>       download_folder = os.path.join(os.getcwd(), 'pages', 'resources')\nE       NameError: name 'os' is not defined. Did you forget to import 'os'\n\nconftest.py:9: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1707064639939,
+      "stop" : 1707064640014,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1707064640132,
+      "stop" : 1707064640132,
+      "duration" : 0
+    },
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'os' is not defined. Did you forget to import 'os'\n",
+    "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1123, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 895, in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n  File \"/usr/workspace/conftest.py\", line 9, in browser\n    download_folder = os.path.join(os.getcwd(), 'pages', 'resources')\n                      ^^\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Registration Functionality"
+  }, {
+    "name" : "story",
+    "value" : "User registration"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 5"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "user_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistrationFeature"
+  }, {
+    "name" : "host",
+    "value" : "95e4d765c464"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.user_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TestCaseID: 5" ]
+  },
+  "source" : "34864906b5e7e045.json",
+  "parameterValues" : [ ]
+}

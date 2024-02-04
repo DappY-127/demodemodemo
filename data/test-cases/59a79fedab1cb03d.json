@@ -1,0 +1,106 @@
+{
+  "uid" : "59a79fedab1cb03d",
+  "name" : "Verify All Products and Product Detail Page",
+  "fullName" : "tests.product_management_feature_test.TestProductManagementFeature#test_product_detail_presence",
+  "historyId" : "e55e2346f2ef98808b004defc91442b8",
+  "time" : {
+    "start" : 1707064640047,
+    "stop" : 1707064640047,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'os' is not defined. Did you forget to import 'os'",
+  "statusTrace" : "request = <SubRequest 'browser' for <Function test_product_detail_presence>>\n\n    @pytest.fixture(scope=\"function\", autouse=True)\n    def browser(request):\n        # preferences = {\"download.default_directory\": \"/usr/workspace/pages/resources\"}\n>       download_folder = os.path.join(os.getcwd(), 'pages', 'resources')\nE       NameError: name 'os' is not defined. Did you forget to import 'os'\n\nconftest.py:9: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1707064640047,
+      "stop" : 1707064640047,
+      "duration" : 0
+    },
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'os' is not defined. Did you forget to import 'os'\n",
+    "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/pluggy/_callers.py\", line 77, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 1123, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/_pytest/fixtures.py\", line 895, in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n  File \"/usr/workspace/conftest.py\", line 9, in browser\n    download_folder = os.path.join(os.getcwd(), 'pages', 'resources')\n                      ^^\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1707064639939,
+      "stop" : 1707064640014,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "TestCaseID: 8"
+  }, {
+    "name" : "story",
+    "value" : "Product Display & Information"
+  }, {
+    "name" : "feature",
+    "value" : "Product Management"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "product_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductManagementFeature"
+  }, {
+    "name" : "host",
+    "value" : "95e4d765c464"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.product_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TestCaseID: 8" ]
+  },
+  "source" : "59a79fedab1cb03d.json",
+  "parameterValues" : [ ]
+}

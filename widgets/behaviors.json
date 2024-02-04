@@ -16,20 +16,9 @@
     "name" : "Product Management",
     "statistic" : {
       "failed" : 0,
-      "broken" : 1,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
-    "uid" : "2b3882ec55ec5e64d01bbad5c589847e",
-    "name" : "Shopping & Checkout",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
     }
@@ -38,9 +27,20 @@
     "name" : "Interface & Navigation",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 2,
       "skipped" : 0,
-      "passed" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "2b3882ec55ec5e64d01bbad5c589847e",
+    "name" : "Shopping & Checkout",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
     }
@@ -49,9 +49,9 @@
     "name" : "Customer Support",
     "statistic" : {
       "failed" : 0,
-      "broken" : 0,
+      "broken" : 1,
       "skipped" : 0,
-      "passed" : 1,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }
