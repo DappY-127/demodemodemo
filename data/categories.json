@@ -3,104 +3,65 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'",
+      "children" : [ {
+        "name" : "Download Invoice after purchase order",
+        "uid" : "2751490d0bf2d4b5",
+        "parentUid" : "66c4965469d3351125bf6cd619719c37",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707039786086,
+          "stop" : 1707039802403,
+          "duration" : 16317
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "66c4965469d3351125bf6cd619719c37"
+    }, {
       "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Verify All Products and Product Detail Page",
-        "uid" : "8615f5e89d5b8f3d",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706710108993,
-          "stop" : 1706710126659,
-          "duration" : 17666
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Add Review on Product",
-        "uid" : "2f1dc2be6cce9848",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706710170866,
-          "stop" : 1706710188167,
-          "duration" : 17301
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Verify address details in checkout page",
-        "uid" : "9978167fb2f4882e",
-        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706710310581,
-          "stop" : 1706710334310,
-          "duration" : 23729
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Register User",
-        "uid" : "b9497a229822e893",
+        "uid" : "35d6b749a70ed1f3",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706710335595,
-          "stop" : 1706710353234,
-          "duration" : 17639
+          "start" : 1707039803746,
+          "stop" : 1707039822547,
+          "duration" : 18801
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login User with correct email and password",
-        "uid" : "30c620d3fd64760",
+        "uid" : "2ef4445df73c7a99",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706710359099,
-          "stop" : 1706710376736,
-          "duration" : 17637
+          "start" : 1707039828534,
+          "stop" : 1707039846868,
+          "duration" : 18334
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Logout User",
-        "uid" : "9887db10c8d92555",
+        "uid" : "ffdfd0f52c81601a",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1706710381966,
-          "stop" : 1706710400316,
-          "duration" : 18350
+          "start" : 1707039852039,
+          "stop" : 1707039869418,
+          "duration" : 17379
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "31bb78a6a95ede3f78b260ed048910d8"
-    }, {
-      "name" : "selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status\nfrom no such window\n  (Session info: chrome=112.0.5615.165)",
-      "children" : [ {
-        "name" : "Remove Products From Cart",
-        "uid" : "31f3cc9eecf05189",
-        "parentUid" : "5e4c46d8ea1136b0a6c2db622337ce2b",
-        "status" : "broken",
-        "time" : {
-          "start" : 1706710159700,
-          "stop" : 1706710161457,
-          "duration" : 1757
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5e4c46d8ea1136b0a6c2db622337ce2b"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],
