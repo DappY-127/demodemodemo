@@ -1,5 +1,6 @@
 import allure
 import os
+import time
 from .base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,6 +23,8 @@ class OrderPlacementPage(BasePage):
     def click_download_invoice_button(self):
         self.wait.until(EC.element_to_be_clickable(self.DOWNLOAD_INVOICE_BTTN)).click()
         downloaded_file_path = os.path.join(os.getcwd(), 'pages', 'resources', 'invoice.txt')
+        print("Current working directory:", os.getcwd())
+        time.sleep(3)
         self.is_file_present(downloaded_file_path)
 
     @allure.step("Order placement message visible")
