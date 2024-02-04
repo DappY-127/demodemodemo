@@ -3,65 +3,78 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "FileNotFoundError: [Errno 2] No such file or directory: '/usr/workspace/pages/resources/invoice.txt'",
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
       "children" : [ {
-        "name" : "Download Invoice after purchase order",
-        "uid" : "2751490d0bf2d4b5",
-        "parentUid" : "66c4965469d3351125bf6cd619719c37",
+        "name" : "Add Review on Product",
+        "uid" : "33d9d7fa16f3f040",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1707039786086,
-          "stop" : 1707039802403,
-          "duration" : 16317
+          "start" : 1707046246239,
+          "stop" : 1707046262790,
+          "duration" : 16551
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
-      } ],
-      "uid" : "66c4965469d3351125bf6cd619719c37"
-    }, {
-      "name" : "selenium.common.exceptions.TimeoutException: Message:",
-      "children" : [ {
+      }, {
         "name" : "Register User",
-        "uid" : "35d6b749a70ed1f3",
+        "uid" : "9273304f334e68dd",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1707039803746,
-          "stop" : 1707039822547,
-          "duration" : 18801
+          "start" : 1707046413193,
+          "stop" : 1707046430646,
+          "duration" : 17453
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Login User with correct email and password",
-        "uid" : "2ef4445df73c7a99",
+        "uid" : "40d2e3727f8537fc",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1707039828534,
-          "stop" : 1707039846868,
-          "duration" : 18334
+          "start" : 1707046435588,
+          "stop" : 1707046452656,
+          "duration" : 17068
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       }, {
         "name" : "Logout User",
-        "uid" : "ffdfd0f52c81601a",
+        "uid" : "451e303ce7b0b0d0",
         "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
         "status" : "broken",
         "time" : {
-          "start" : 1707039852039,
-          "stop" : 1707039869418,
-          "duration" : 17379
+          "start" : 1707046457524,
+          "stop" : 1707046475156,
+          "duration" : 17632
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    }, {
+      "name" : "TypeError: Attach.file() got an unexpected keyword argument 'content'",
+      "children" : [ {
+        "name" : "Download Invoice after purchase order",
+        "uid" : "f14dd9606dc61140",
+        "parentUid" : "fba77cc5dbee07588012d1eed3e3d810",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707046394896,
+          "stop" : 1707046411962,
+          "duration" : 17066
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fba77cc5dbee07588012d1eed3e3d810"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ],

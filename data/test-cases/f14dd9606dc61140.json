@@ -1,0 +1,1538 @@
+{
+  "uid" : "f14dd9606dc61140",
+  "name" : "Download Invoice after purchase order",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_invoice_download_after_order_purchase",
+  "historyId" : "25bee94c8c5ea62231430ed99bae6557",
+  "time" : {
+    "start" : 1707046394896,
+    "stop" : 1707046411962,
+    "duration" : 17066
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: Attach.file() got an unexpected keyword argument 'content'",
+  "statusTrace" : "self = <tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature object at 0x7fe9b042d190>\n\n    @allure.title(\"Download Invoice after purchase order\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.story(\"Checkout Process\")\n    @allure.tag('TestCaseID: 24')\n    def test_invoice_download_after_order_purchase(self):\n        self.account_register()\n    \n        self.home_page.click_products_button()\n        self.products_page.is_opened()\n        self.products_page.add_product_to_cart_by_name('Green Side Placket Detail T-Shirt')\n        self.products_page.click_view_cart_bttn()\n        self.cart_page.is_opened()\n        self.cart_page.is_cart_products_present('Green Side Placket Detail T-Shirt')\n        self.cart_page.click_proceed_to_checkout_bttn()\n        self.checkout_page.is_opened()\n        self.checkout_page.is_delivery_address_visible()\n        self.checkout_page.is_billing_address_visible()\n        self.checkout_page.verify_delivery_address_info()\n        self.checkout_page.verify_billing_address_info()\n        self.checkout_page.fill_order_commnets()\n        self.checkout_page.click_place_order_button()\n        self.payment_page.is_payments_label_visible()\n        self.payment_page.fill_payment_details_section()\n        self.payment_page.click_confirm_order_button()\n        self.order_placement_page.is_order_placed_message_visible()\n>       self.order_placement_page.click_download_invoice_button()\n\ntests/shopping_checkout_feature_test.py:233: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/order_placement_page.py:27: in click_download_invoice_button\n    self.is_file_present(downloaded_file_path)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.order_placement_page.OrderPlacementPage object at 0x7fe9afd8cf50>\nfile_path = '/usr/workspace/pages/resources/invoice.txt'\n\n    @allure.step(\"Invoice downloaded\")\n    def is_file_present(self, file_path):\n        with allure.step(f\"Verify the presence of the file at {file_path}\"):\n            if not os.path.exists(file_path) or not os.path.isfile(file_path):\n                error_message = f\"File {file_path} not found\"\n>               allure.attach.file(content=error_message.encode('utf-8'), name=\"Error Message\", attachment_type=allure.attachment_type.TEXT)\nE               TypeError: Attach.file() got an unexpected keyword argument 'content'\n\npages/order_placement_page.py:39: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1707046394629,
+      "stop" : 1707046394896,
+      "duration" : 267
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1707046393757,
+      "stop" : 1707046394629,
+      "duration" : 872
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1707046188744,
+      "stop" : 1707046188818,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: Attach.file() got an unexpected keyword argument 'content'",
+    "statusTrace" : "self = <tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature object at 0x7fe9b042d190>\n\n    @allure.title(\"Download Invoice after purchase order\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.story(\"Checkout Process\")\n    @allure.tag('TestCaseID: 24')\n    def test_invoice_download_after_order_purchase(self):\n        self.account_register()\n    \n        self.home_page.click_products_button()\n        self.products_page.is_opened()\n        self.products_page.add_product_to_cart_by_name('Green Side Placket Detail T-Shirt')\n        self.products_page.click_view_cart_bttn()\n        self.cart_page.is_opened()\n        self.cart_page.is_cart_products_present('Green Side Placket Detail T-Shirt')\n        self.cart_page.click_proceed_to_checkout_bttn()\n        self.checkout_page.is_opened()\n        self.checkout_page.is_delivery_address_visible()\n        self.checkout_page.is_billing_address_visible()\n        self.checkout_page.verify_delivery_address_info()\n        self.checkout_page.verify_billing_address_info()\n        self.checkout_page.fill_order_commnets()\n        self.checkout_page.click_place_order_button()\n        self.payment_page.is_payments_label_visible()\n        self.payment_page.fill_payment_details_section()\n        self.payment_page.click_confirm_order_button()\n        self.order_placement_page.is_order_placed_message_visible()\n>       self.order_placement_page.click_download_invoice_button()\n\ntests/shopping_checkout_feature_test.py:233: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npages/order_placement_page.py:27: in click_download_invoice_button\n    self.is_file_present(downloaded_file_path)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pages.order_placement_page.OrderPlacementPage object at 0x7fe9afd8cf50>\nfile_path = '/usr/workspace/pages/resources/invoice.txt'\n\n    @allure.step(\"Invoice downloaded\")\n    def is_file_present(self, file_path):\n        with allure.step(f\"Verify the presence of the file at {file_path}\"):\n            if not os.path.exists(file_path) or not os.path.isfile(file_path):\n                error_message = f\"File {file_path} not found\"\n>               allure.attach.file(content=error_message.encode('utf-8'), name=\"Error Message\", attachment_type=allure.attachment_type.TEXT)\nE               TypeError: Attach.file() got an unexpected keyword argument 'content'\n\npages/order_placement_page.py:39: TypeError",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1707046394896,
+        "stop" : 1707046395851,
+        "duration" : 955
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1707046395851,
+        "stop" : 1707046395865,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click Signup/Login header button",
+      "time" : {
+        "start" : 1707046395865,
+        "stop" : 1707046396764,
+        "duration" : 899
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1707046396764,
+        "stop" : 1707046396831,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter name for signup",
+      "time" : {
+        "start" : 1707046396831,
+        "stop" : 1707046396931,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'David Rodgers'",
+        "time" : {
+          "start" : 1707046396831,
+          "stop" : 1707046396931,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-name\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'David Rodgers'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Enter email for signup",
+      "time" : {
+        "start" : 1707046396931,
+        "stop" : 1707046397023,
+        "duration" : 92
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'testmail8318@mail.com'",
+        "time" : {
+          "start" : 1707046396931,
+          "stop" : 1707046397023,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'testmail8318@mail.com'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click signup button",
+      "time" : {
+        "start" : 1707046397023,
+        "stop" : 1707046398236,
+        "duration" : 1213
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/signup is opened",
+      "time" : {
+        "start" : 1707046398236,
+        "stop" : 1707046398247,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Enter Account Information' section",
+      "time" : {
+        "start" : 1707046398247,
+        "stop" : 1707046398947,
+        "duration" : 700
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'password123qwerty'",
+        "time" : {
+          "start" : 1707046398350,
+          "stop" : 1707046398440,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#password')"
+        }, {
+          "name" : "value",
+          "value" : "'password123qwerty'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select option with value: '30'",
+        "time" : {
+          "start" : 1707046398440,
+          "stop" : 1707046398500,
+          "duration" : 60
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#days')"
+        }, {
+          "name" : "option_text",
+          "value" : "'30'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select option with value: 'January'",
+        "time" : {
+          "start" : 1707046398500,
+          "stop" : 1707046398558,
+          "duration" : 58
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#months')"
+        }, {
+          "name" : "option_text",
+          "value" : "'January'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select option with value: '1953'",
+        "time" : {
+          "start" : 1707046398559,
+          "stop" : 1707046398619,
+          "duration" : 60
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#years')"
+        }, {
+          "name" : "option_text",
+          "value" : "'1953'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "274c966581b62071",
+        "name" : "Filled account information section form",
+        "source" : "274c966581b62071.png",
+        "type" : "image/png",
+        "size" : 217080
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Address Information' section",
+      "time" : {
+        "start" : 1707046398947,
+        "stop" : 1707046399911,
+        "duration" : 964
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Barry'",
+        "time" : {
+          "start" : 1707046398948,
+          "stop" : 1707046399018,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#first_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Barry'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: 'Butler'",
+        "time" : {
+          "start" : 1707046399019,
+          "stop" : 1707046399089,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#last_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Butler'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: 'Jackson Ltd'",
+        "time" : {
+          "start" : 1707046399089,
+          "stop" : 1707046399167,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#company')"
+        }, {
+          "name" : "value",
+          "value" : "'Jackson Ltd'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '73211 Stewart Well Suite 937'",
+        "time" : {
+          "start" : 1707046399167,
+          "stop" : 1707046399256,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address1')"
+        }, {
+          "name" : "value",
+          "value" : "'73211 Stewart Well Suite 937'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: 'Apt. 600'",
+        "time" : {
+          "start" : 1707046399257,
+          "stop" : 1707046399334,
+          "duration" : 77
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address2')"
+        }, {
+          "name" : "value",
+          "value" : "'Apt. 600'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Select option with value: 'Canada'",
+        "time" : {
+          "start" : 1707046399334,
+          "stop" : 1707046399395,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#country')"
+        }, {
+          "name" : "option_text",
+          "value" : "'Canada'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: 'Oklahoma'",
+        "time" : {
+          "start" : 1707046399395,
+          "stop" : 1707046399475,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#state')"
+        }, {
+          "name" : "value",
+          "value" : "'Oklahoma'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: 'Port Antonio'",
+        "time" : {
+          "start" : 1707046399475,
+          "stop" : 1707046399555,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#city')"
+        }, {
+          "name" : "value",
+          "value" : "'Port Antonio'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '51914'",
+        "time" : {
+          "start" : 1707046399555,
+          "stop" : 1707046399631,
+          "duration" : 76
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#zipcode')"
+        }, {
+          "name" : "value",
+          "value" : "'51914'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '(610)880-6205x5645'",
+        "time" : {
+          "start" : 1707046399631,
+          "stop" : 1707046399714,
+          "duration" : 83
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#mobile_number')"
+        }, {
+          "name" : "value",
+          "value" : "'(610)880-6205x5645'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "f29ad5614483403f",
+        "name" : "Filled addres section form",
+        "source" : "f29ad5614483403f.png",
+        "type" : "image/png",
+        "size" : 206320
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 10,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click create account button",
+      "time" : {
+        "start" : 1707046399911,
+        "stop" : 1707046400861,
+        "duration" : 950
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707046399911,
+          "stop" : 1707046399921,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', '[data-qa=\"create-account\"]')"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/account_created is opened",
+      "time" : {
+        "start" : 1707046400861,
+        "stop" : 1707046400960,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "User creation message visible",
+      "time" : {
+        "start" : 1707046400960,
+        "stop" : 1707046401122,
+        "duration" : 162
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ba511bbd73d5820",
+        "name" : "User created",
+        "source" : "4ba511bbd73d5820.png",
+        "type" : "image/png",
+        "size" : 70093
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1707046401122,
+        "stop" : 1707046402438,
+        "duration" : 1316
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Close Advertisement",
+        "time" : {
+          "start" : 1707046401203,
+          "stop" : 1707046402438,
+          "duration" : 1235
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "2795ba006f60a458",
+          "name" : "Advertisement Status",
+          "source" : "2795ba006f60a458.txt",
+          "type" : "text/plain",
+          "size" : 20
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1707046402438,
+        "stop" : 1707046402455,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "User name header visible",
+      "time" : {
+        "start" : 1707046402455,
+        "stop" : 1707046402599,
+        "duration" : 144
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify user status text",
+      "time" : {
+        "start" : 1707046402599,
+        "stop" : 1707046402640,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify user status text is correct for user David Rodgers",
+        "time" : {
+          "start" : 1707046402640,
+          "stop" : 1707046402640,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click products header button",
+      "time" : {
+        "start" : 1707046402640,
+        "stop" : 1707046403898,
+        "duration" : 1258
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/products is opened",
+      "time" : {
+        "start" : 1707046403898,
+        "stop" : 1707046403908,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Add product: 'Green Side Placket Detail T-Shirt' to cart",
+      "time" : {
+        "start" : 1707046403908,
+        "stop" : 1707046404442,
+        "duration" : 534
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707046403981,
+          "stop" : 1707046403990,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Green Side Placket Detail T-Shirt'])[1]\")"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Hover mouse over element",
+        "time" : {
+          "start" : 1707046403990,
+          "stop" : 1707046404385,
+          "duration" : 395
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Green Side Placket Detail T-Shirt'])[1]\")"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_name",
+        "value" : "'Green Side Placket Detail T-Shirt'"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click 'View Cart' button",
+      "time" : {
+        "start" : 1707046404442,
+        "stop" : 1707046406085,
+        "duration" : 1643
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1707046404442,
+          "stop" : 1707046405543,
+          "duration" : 1101
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1707046406085,
+        "stop" : 1707046406095,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Products at cart presence",
+      "time" : {
+        "start" : 1707046406095,
+        "stop" : 1707046406451,
+        "duration" : 356
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check if the cart is not empty",
+        "time" : {
+          "start" : 1707046406095,
+          "stop" : 1707046406281,
+          "duration" : 186
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "36bac17645e5bde5",
+          "name" : "Cart Empty Check",
+          "source" : "36bac17645e5bde5.attach",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "573b7e565b71a840",
+          "name" : "Cart Product",
+          "source" : "573b7e565b71a840.png",
+          "type" : "image/png",
+          "size" : 75963
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Get list of product names in the cart",
+        "time" : {
+          "start" : 1707046406281,
+          "stop" : 1707046406303,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "437423ed798756c2",
+          "name" : "Cart Products",
+          "source" : "437423ed798756c2.attach",
+          "type" : "text/plain",
+          "size" : 48
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "4e169c8d7a5eb038",
+        "name" : "Products Presence Check",
+        "source" : "4e169c8d7a5eb038.attach",
+        "type" : "text/plain",
+        "size" : 51
+      }, {
+        "uid" : "16e3837f477a54bd",
+        "name" : "Cart products",
+        "source" : "16e3837f477a54bd.png",
+        "type" : "image/png",
+        "size" : 75963
+      } ],
+      "parameters" : [ {
+        "name" : "product_names_to_check",
+        "value" : "('Green Side Placket Detail T-Shirt',)"
+      } ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click 'Proceed To Checkout' button",
+      "time" : {
+        "start" : 1707046406451,
+        "stop" : 1707046407806,
+        "duration" : 1355
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Page https://automationexercise.com/checkout is opened",
+      "time" : {
+        "start" : 1707046407806,
+        "stop" : 1707046407817,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "'YOUR DELIVERY ADDRESS' information block visible",
+      "time" : {
+        "start" : 1707046407817,
+        "stop" : 1707046408055,
+        "duration" : 238
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b24ff593afead0ce",
+        "name" : "Delivery Address",
+        "source" : "b24ff593afead0ce.png",
+        "type" : "image/png",
+        "size" : 93896
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "'YOUR BILLING ADDRESS' information block visible",
+      "time" : {
+        "start" : 1707046408056,
+        "stop" : 1707046408231,
+        "duration" : 175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cb6c95dc630eb994",
+        "name" : "Billing Address",
+        "source" : "cb6c95dc630eb994.png",
+        "type" : "image/png",
+        "size" : 100225
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify delifery address information",
+      "time" : {
+        "start" : 1707046408231,
+        "stop" : 1707046408328,
+        "duration" : 97
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify name information",
+        "time" : {
+          "start" : 1707046408327,
+          "stop" : 1707046408327,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify address information",
+        "time" : {
+          "start" : 1707046408327,
+          "stop" : 1707046408328,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify country and phone information",
+        "time" : {
+          "start" : 1707046408328,
+          "stop" : 1707046408328,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Verify billing address information",
+      "time" : {
+        "start" : 1707046408328,
+        "stop" : 1707046408423,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify name information",
+        "time" : {
+          "start" : 1707046408423,
+          "stop" : 1707046408423,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify address information",
+        "time" : {
+          "start" : 1707046408423,
+          "stop" : 1707046408423,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Verify country and phone information",
+        "time" : {
+          "start" : 1707046408423,
+          "stop" : 1707046408423,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill order comment",
+      "time" : {
+        "start" : 1707046408423,
+        "stop" : 1707046408771,
+        "duration" : 348
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707046408424,
+          "stop" : 1707046408437,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', \"#ordermsg [name='message']\")"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: 'Full official nature leader. Never yeah fire section computer week son policy.'",
+        "time" : {
+          "start" : 1707046408437,
+          "stop" : 1707046408568,
+          "duration" : 131
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"#ordermsg [name='message']\")"
+        }, {
+          "name" : "value",
+          "value" : "'Full official nature leader. Never yeah fire section computer week son policy.'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "28dbaa1437aee7ac",
+        "name" : "Order comments",
+        "source" : "28dbaa1437aee7ac.png",
+        "type" : "image/png",
+        "size" : 275201
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click 'Place Order' button",
+      "time" : {
+        "start" : 1707046408772,
+        "stop" : 1707046409338,
+        "duration" : 566
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1707046408772,
+          "stop" : 1707046408783,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', \"[href='/payment']\")"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Payment label visible",
+      "time" : {
+        "start" : 1707046409338,
+        "stop" : 1707046409524,
+        "duration" : 186
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ad172c5ba004875a",
+        "name" : "Payment Label",
+        "source" : "ad172c5ba004875a.png",
+        "type" : "image/png",
+        "size" : 62092
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Fill 'Enter payment details' section",
+      "time" : {
+        "start" : 1707046409524,
+        "stop" : 1707046410068,
+        "duration" : 544
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Barry Butler'",
+        "time" : {
+          "start" : 1707046409524,
+          "stop" : 1707046409631,
+          "duration" : 107
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='name-on-card']\")"
+        }, {
+          "name" : "value",
+          "value" : "'Barry Butler'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '213152804357483'",
+        "time" : {
+          "start" : 1707046409631,
+          "stop" : 1707046409712,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='card-number']\")"
+        }, {
+          "name" : "value",
+          "value" : "'213152804357483'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '160'",
+        "time" : {
+          "start" : 1707046409712,
+          "stop" : 1707046409786,
+          "duration" : 74
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='cvc']\")"
+        }, {
+          "name" : "value",
+          "value" : "'160'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '04'",
+        "time" : {
+          "start" : 1707046409786,
+          "stop" : 1707046409859,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='expiry-month']\")"
+        }, {
+          "name" : "value",
+          "value" : "'04'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Fill field with value: '1946'",
+        "time" : {
+          "start" : 1707046409860,
+          "stop" : 1707046409934,
+          "duration" : 74
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', \"[data-qa='expiry-year']\")"
+        }, {
+          "name" : "value",
+          "value" : "'1946'"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ {
+        "uid" : "9f80f8a8ca6615ed",
+        "name" : "Filled card information section form",
+        "source" : "9f80f8a8ca6615ed.png",
+        "type" : "image/png",
+        "size" : 65644
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click confirm order button",
+      "time" : {
+        "start" : 1707046410068,
+        "stop" : 1707046411677,
+        "duration" : 1609
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Order placement message visible",
+      "time" : {
+        "start" : 1707046411678,
+        "stop" : 1707046411864,
+        "duration" : 186
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6b4b7b058426fe9d",
+        "name" : "Order Placed",
+        "source" : "6b4b7b058426fe9d.png",
+        "type" : "image/png",
+        "size" : 60560
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Click 'Download Invoice' button",
+      "time" : {
+        "start" : 1707046411864,
+        "stop" : 1707046411962,
+        "duration" : 98
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: Attach.file() got an unexpected keyword argument 'content'\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/order_placement_page.py\", line 27, in click_download_invoice_button\n    self.is_file_present(downloaded_file_path)\n  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/order_placement_page.py\", line 39, in is_file_present\n    allure.attach.file(content=error_message.encode('utf-8'), name=\"Error Message\", attachment_type=allure.attachment_type.TEXT)\n",
+      "steps" : [ {
+        "name" : "Invoice downloaded",
+        "time" : {
+          "start" : 1707046411961,
+          "stop" : 1707046411962,
+          "duration" : 1
+        },
+        "status" : "broken",
+        "statusMessage" : "TypeError: Attach.file() got an unexpected keyword argument 'content'\n",
+        "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/pages/order_placement_page.py\", line 39, in is_file_present\n    allure.attach.file(content=error_message.encode('utf-8'), name=\"Error Message\", attachment_type=allure.attachment_type.TEXT)\n",
+        "steps" : [ {
+          "name" : "Verify the presence of the file at /usr/workspace/pages/resources/invoice.txt",
+          "time" : {
+            "start" : 1707046411961,
+            "stop" : 1707046411961,
+            "duration" : 0
+          },
+          "status" : "broken",
+          "statusMessage" : "TypeError: Attach.file() got an unexpected keyword argument 'content'\n",
+          "statusTrace" : "  File \"/usr/workspace/pages/order_placement_page.py\", line 39, in is_file_present\n    allure.attach.file(content=error_message.encode('utf-8'), name=\"Error Message\", attachment_type=allure.attachment_type.TEXT)\n",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : true,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "file_path",
+          "value" : "'/usr/workspace/pages/resources/invoice.txt'"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 76,
+    "hasContent" : true,
+    "attachmentsCount" : 15,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1707046411974,
+      "stop" : 1707046412070,
+      "duration" : 96
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Checkout Process"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 24"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "shopping_checkout_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShoppingCheckoutFeature"
+  }, {
+    "name" : "host",
+    "value" : "df575a30759e"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.shopping_checkout_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "TestCaseID: 24" ]
+  },
+  "source" : "f14dd9606dc61140.json",
+  "parameterValues" : [ ]
+}
