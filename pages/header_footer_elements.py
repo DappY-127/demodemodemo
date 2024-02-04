@@ -23,8 +23,11 @@ class HeaderFooterElements():
     USER_STATUS = ('xpath', '//a[contains(text(), "Logged in as")]')
 
     AD_IFRAME = ('xpath', '//*[@id="ad_iframe"]')
-    AD_CLOSE_BTTN = ('xpath', '//*[@id="dismiss-button"]')
+    AD_FULL_IFRAME = ('xpath', '//div[@id="ad_position_box"]')
+    AD_CLOSE_BTTN = ('css selector', 'div#dismiss-button')
+    ACTIVE_AD = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"]')
     ACTIVE_AD_IFRAME = ('css selector', 'ins.adsbygoogle[data-ad-status="filled"][data-vignette-loaded="true"] iframe')
+    NESTED_ACTIVE_AD_IFRAME = ('css selector', 'iframe#ad_iframe[title="Advertisement"]')
 
 
     @allure.step("Click Signup/Login header button")
