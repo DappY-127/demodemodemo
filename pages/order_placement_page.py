@@ -1,6 +1,5 @@
 import allure
 import os
-import time
 from .base_page import BasePage
 from config.links import Links
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,7 +21,6 @@ class OrderPlacementPage(BasePage):
     @allure.step("Click 'Download Invoice' button")
     def click_download_invoice_button(self):
         self.wait.until(EC.element_to_be_clickable(self.DOWNLOAD_INVOICE_BTTN)).click()
-        print("Current working directory:", os.getcwd())
         downloaded_file_path = os.path.join(os.getcwd(), 'pages', 'resources', 'invoice.txt')
         self.is_file_present(downloaded_file_path)
 
@@ -35,9 +33,9 @@ class OrderPlacementPage(BasePage):
     def is_file_present(self, file_path):
         with allure.step(f"Verify the presence of the file at {file_path}"):
             if not os.path.exists(file_path) or not os.path.isfile(file_path):
-                error_message = f"File {file_path} not found"
-                allure.attach.file(content=error_message.encode('utf-8'), name="Error Message", attachment_type=allure.attachment_type.TEXT)
+                allure.attach.file(file_path, name="Missing File Screenshot", attachment_type=allure.attachment_type.PNG)
                 raise FileNotFoundError(f"File {file_path} not found")
 
+        allure.attach.file(file_path, name="File Screenshot", attachment_type=allure.attachment_type.PNG)
         return True
     
