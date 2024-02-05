@@ -1,5 +1,82 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.TimeoutException: Message:",
+      "children" : [ {
+        "name" : "Add Review on Product",
+        "uid" : "87b84d1e4672a8ac",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707126606570,
+          "stop" : 1707126623241,
+          "duration" : 16671
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Register User",
+        "uid" : "3b1ef0185902bb57",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707126763400,
+          "stop" : 1707126780823,
+          "duration" : 17423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login User with correct email and password",
+        "uid" : "85644d0969eb8ab4",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707126785827,
+          "stop" : 1707126803049,
+          "duration" : 17222
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Logout User",
+        "uid" : "38126f95ceed4091",
+        "parentUid" : "31bb78a6a95ede3f78b260ed048910d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707126808126,
+          "stop" : 1707126825325,
+          "duration" : 17199
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "31bb78a6a95ede3f78b260ed048910d8"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'File downloaded. File path : /usr/workspace/pages/resources/invoice.txt'",
+      "children" : [ {
+        "name" : "Download Invoice after purchase order",
+        "uid" : "9e8d0280addbb091",
+        "parentUid" : "53396c571e36414f1c947081c49221d3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1707126744473,
+          "stop" : 1707126762069,
+          "duration" : 17596
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "53396c571e36414f1c947081c49221d3"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
   "name" : "categories"
 }
