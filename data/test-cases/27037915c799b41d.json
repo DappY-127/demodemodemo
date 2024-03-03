@@ -1,0 +1,1332 @@
+{
+  "uid" : "27037915c799b41d",
+  "name" : "Verify address details in checkout page",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_address_details_in_checkout_page",
+  "historyId" : "31bdb85256e06926e44c95b61d75e9dc",
+  "time" : {
+    "start" : 1709475732353,
+    "stop" : 1709475747518,
+    "duration" : 15165
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1709475731215,
+      "stop" : 1709475732067,
+      "duration" : 852
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1709475562608,
+      "stop" : 1709475562682,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1709475732067,
+      "stop" : 1709475732353,
+      "duration" : 286
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1709475732354,
+        "stop" : 1709475733281,
+        "duration" : 927
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475733281,
+        "stop" : 1709475733295,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click Signup/Login header button",
+      "time" : {
+        "start" : 1709475733296,
+        "stop" : 1709475733814,
+        "duration" : 518
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1709475733814,
+        "stop" : 1709475733823,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter name for signup",
+      "time" : {
+        "start" : 1709475733823,
+        "stop" : 1709475733953,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'George Kelley'",
+        "time" : {
+          "start" : 1709475733823,
+          "stop" : 1709475733953,
+          "duration" : 130
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-name\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'George Kelley'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Enter email for signup",
+      "time" : {
+        "start" : 1709475733953,
+        "stop" : 1709475734042,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'testmail2446@mail.com'",
+        "time" : {
+          "start" : 1709475733953,
+          "stop" : 1709475734042,
+          "duration" : 89
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'testmail2446@mail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click signup button",
+      "time" : {
+        "start" : 1709475734042,
+        "stop" : 1709475735054,
+        "duration" : 1012
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/signup is opened",
+      "time" : {
+        "start" : 1709475735054,
+        "stop" : 1709475735066,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Enter Account Information' section",
+      "time" : {
+        "start" : 1709475735067,
+        "stop" : 1709475735731,
+        "duration" : 664
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'password123qwerty'",
+        "time" : {
+          "start" : 1709475735170,
+          "stop" : 1709475735263,
+          "duration" : 93
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#password')"
+        }, {
+          "name" : "value",
+          "value" : "'password123qwerty'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: '6'",
+        "time" : {
+          "start" : 1709475735263,
+          "stop" : 1709475735323,
+          "duration" : 60
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#days')"
+        }, {
+          "name" : "option_text",
+          "value" : "'6'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: 'April'",
+        "time" : {
+          "start" : 1709475735323,
+          "stop" : 1709475735385,
+          "duration" : 62
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#months')"
+        }, {
+          "name" : "option_text",
+          "value" : "'April'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: '2006'",
+        "time" : {
+          "start" : 1709475735385,
+          "stop" : 1709475735446,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#years')"
+        }, {
+          "name" : "option_text",
+          "value" : "'2006'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "6fa3742063fda4ff",
+        "name" : "Filled account information section form",
+        "source" : "6fa3742063fda4ff.png",
+        "type" : "image/png",
+        "size" : 146825
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 'Address Information' section",
+      "time" : {
+        "start" : 1709475735731,
+        "stop" : 1709475736695,
+        "duration" : 964
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Jennifer'",
+        "time" : {
+          "start" : 1709475735731,
+          "stop" : 1709475735804,
+          "duration" : 73
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#first_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Jennifer'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Martin'",
+        "time" : {
+          "start" : 1709475735804,
+          "stop" : 1709475735879,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#last_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Martin'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Trevino Group'",
+        "time" : {
+          "start" : 1709475735879,
+          "stop" : 1709475735964,
+          "duration" : 85
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#company')"
+        }, {
+          "name" : "value",
+          "value" : "'Trevino Group'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '097 Walker Crossroad'",
+        "time" : {
+          "start" : 1709475735964,
+          "stop" : 1709475736056,
+          "duration" : 92
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address1')"
+        }, {
+          "name" : "value",
+          "value" : "'097 Walker Crossroad'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Suite 532'",
+        "time" : {
+          "start" : 1709475736056,
+          "stop" : 1709475736137,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address2')"
+        }, {
+          "name" : "value",
+          "value" : "'Suite 532'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: 'Canada'",
+        "time" : {
+          "start" : 1709475736137,
+          "stop" : 1709475736201,
+          "duration" : 64
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#country')"
+        }, {
+          "name" : "option_text",
+          "value" : "'Canada'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'North Dakota'",
+        "time" : {
+          "start" : 1709475736201,
+          "stop" : 1709475736283,
+          "duration" : 82
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#state')"
+        }, {
+          "name" : "value",
+          "value" : "'North Dakota'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Wallacemouth'",
+        "time" : {
+          "start" : 1709475736283,
+          "stop" : 1709475736369,
+          "duration" : 86
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#city')"
+        }, {
+          "name" : "value",
+          "value" : "'Wallacemouth'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '75933'",
+        "time" : {
+          "start" : 1709475736369,
+          "stop" : 1709475736450,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#zipcode')"
+        }, {
+          "name" : "value",
+          "value" : "'75933'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '001-605-679-8236x496'",
+        "time" : {
+          "start" : 1709475736450,
+          "stop" : 1709475736538,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#mobile_number')"
+        }, {
+          "name" : "value",
+          "value" : "'001-605-679-8236x496'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "7dbf734a8beb0087",
+        "name" : "Filled addres section form",
+        "source" : "7dbf734a8beb0087.png",
+        "type" : "image/png",
+        "size" : 132391
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 10,
+      "hasContent" : true
+    }, {
+      "name" : "Click create account button",
+      "time" : {
+        "start" : 1709475736695,
+        "stop" : 1709475737635,
+        "duration" : 940
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1709475736695,
+          "stop" : 1709475736705,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', '[data-qa=\"create-account\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/account_created is opened",
+      "time" : {
+        "start" : 1709475737635,
+        "stop" : 1709475737649,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User creation message visible",
+      "time" : {
+        "start" : 1709475737649,
+        "stop" : 1709475737819,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "67e654e5fa030d33",
+        "name" : "User created",
+        "source" : "67e654e5fa030d33.png",
+        "type" : "image/png",
+        "size" : 70093
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1709475737819,
+        "stop" : 1709475739289,
+        "duration" : 1470
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Close Advertisement",
+        "time" : {
+          "start" : 1709475737898,
+          "stop" : 1709475739289,
+          "duration" : 1391
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "4aa05d27d6f9b717",
+          "name" : "Advertisement Status",
+          "source" : "4aa05d27d6f9b717.txt",
+          "type" : "text/plain",
+          "size" : 20
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475739289,
+        "stop" : 1709475739304,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User name header visible",
+      "time" : {
+        "start" : 1709475739304,
+        "stop" : 1709475739398,
+        "duration" : 94
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Verify user status text",
+      "time" : {
+        "start" : 1709475739398,
+        "stop" : 1709475739436,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify user status text is correct for user George Kelley",
+        "time" : {
+          "start" : 1709475739436,
+          "stop" : 1709475739436,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click products header button",
+      "time" : {
+        "start" : 1709475739436,
+        "stop" : 1709475740493,
+        "duration" : 1057
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/products is opened",
+      "time" : {
+        "start" : 1709475740493,
+        "stop" : 1709475740541,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Site header visible",
+      "time" : {
+        "start" : 1709475740541,
+        "stop" : 1709475740565,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'ALL PRODUCTS' page visible",
+      "time" : {
+        "start" : 1709475740565,
+        "stop" : 1709475740832,
+        "duration" : 267
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "709e4c0e92e6cf9e",
+        "name" : "Products page",
+        "source" : "709e4c0e92e6cf9e.png",
+        "type" : "image/png",
+        "size" : 409895
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Add product: 'Sleeves Printed Top - White' to cart",
+      "time" : {
+        "start" : 1709475740832,
+        "stop" : 1709475741252,
+        "duration" : 420
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1709475740870,
+          "stop" : 1709475740886,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Sleeves Printed Top - White'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Hover mouse over element",
+        "time" : {
+          "start" : 1709475740886,
+          "stop" : 1709475741197,
+          "duration" : 311
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('xpath', \"(//p[text()='Sleeves Printed Top - White'])[1]\")"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "product_name",
+        "value" : "'Sleeves Printed Top - White'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Click 'View Cart' button",
+      "time" : {
+        "start" : 1709475741252,
+        "stop" : 1709475742984,
+        "duration" : 1732
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "'Your product has been added to cart.' modal pop up visible",
+        "time" : {
+          "start" : 1709475741252,
+          "stop" : 1709475742348,
+          "duration" : 1096
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/view_cart is opened",
+      "time" : {
+        "start" : 1709475742984,
+        "stop" : 1709475742993,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Products at cart presence",
+      "time" : {
+        "start" : 1709475742993,
+        "stop" : 1709475743351,
+        "duration" : 358
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Check if the cart is not empty",
+        "time" : {
+          "start" : 1709475742993,
+          "stop" : 1709475743179,
+          "duration" : 186
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a0b7da8a5ac7e886",
+          "name" : "Cart Empty Check",
+          "source" : "a0b7da8a5ac7e886.attach",
+          "type" : "text/plain",
+          "size" : 20
+        }, {
+          "uid" : "3e2105433a6a3c39",
+          "name" : "Cart Product",
+          "source" : "3e2105433a6a3c39.png",
+          "type" : "image/png",
+          "size" : 80446
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Get list of product names in the cart",
+        "time" : {
+          "start" : 1709475743179,
+          "stop" : 1709475743200,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "56256d1fdd98ad12",
+          "name" : "Cart Products",
+          "source" : "56256d1fdd98ad12.attach",
+          "type" : "text/plain",
+          "size" : 42
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "7069228cc0696d41",
+        "name" : "Products Presence Check",
+        "source" : "7069228cc0696d41.attach",
+        "type" : "text/plain",
+        "size" : 45
+      }, {
+        "uid" : "20cb3ae0b5531714",
+        "name" : "Cart products",
+        "source" : "20cb3ae0b5531714.png",
+        "type" : "image/png",
+        "size" : 80446
+      } ],
+      "parameters" : [ {
+        "name" : "product_names_to_check",
+        "value" : "('Sleeves Printed Top - White',)"
+      } ],
+      "attachmentsCount" : 5,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "Click 'Proceed To Checkout' button",
+      "time" : {
+        "start" : 1709475743351,
+        "stop" : 1709475744150,
+        "duration" : 799
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/checkout is opened",
+      "time" : {
+        "start" : 1709475744150,
+        "stop" : 1709475744159,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "'YOUR DELIVERY ADDRESS' information block visible",
+      "time" : {
+        "start" : 1709475744159,
+        "stop" : 1709475744338,
+        "duration" : 179
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f25d2037351311b7",
+        "name" : "Delivery Address",
+        "source" : "f25d2037351311b7.png",
+        "type" : "image/png",
+        "size" : 97613
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "'YOUR BILLING ADDRESS' information block visible",
+      "time" : {
+        "start" : 1709475744338,
+        "stop" : 1709475744487,
+        "duration" : 149
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5a7c22c53dc7e8a3",
+        "name" : "Billing Address",
+        "source" : "5a7c22c53dc7e8a3.png",
+        "type" : "image/png",
+        "size" : 97613
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Verify delifery address information",
+      "time" : {
+        "start" : 1709475744487,
+        "stop" : 1709475744576,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify name information",
+        "time" : {
+          "start" : 1709475744576,
+          "stop" : 1709475744576,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Verify address information",
+        "time" : {
+          "start" : 1709475744576,
+          "stop" : 1709475744576,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Verify country and phone information",
+        "time" : {
+          "start" : 1709475744576,
+          "stop" : 1709475744576,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Verify billing address information",
+      "time" : {
+        "start" : 1709475744576,
+        "stop" : 1709475744665,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify name information",
+        "time" : {
+          "start" : 1709475744665,
+          "stop" : 1709475744665,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Verify address information",
+        "time" : {
+          "start" : 1709475744665,
+          "stop" : 1709475744665,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      }, {
+        "name" : "Verify country and phone information",
+        "time" : {
+          "start" : 1709475744665,
+          "stop" : 1709475744665,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "Click Home header button",
+      "time" : {
+        "start" : 1709475744665,
+        "stop" : 1709475745212,
+        "duration" : 547
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click delete account header button",
+      "time" : {
+        "start" : 1709475745212,
+        "stop" : 1709475745746,
+        "duration" : 534
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/delete_account is opened",
+      "time" : {
+        "start" : 1709475745747,
+        "stop" : 1709475745755,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User deletion message visible",
+      "time" : {
+        "start" : 1709475745755,
+        "stop" : 1709475745940,
+        "duration" : 185
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8746cce3bdc87279",
+        "name" : "User deleted",
+        "source" : "8746cce3bdc87279.png",
+        "type" : "image/png",
+        "size" : 69062
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1709475745940,
+        "stop" : 1709475747506,
+        "duration" : 1566
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475747506,
+        "stop" : 1709475747518,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 13,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 67,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1709475747519,
+      "stop" : 1709475747650,
+      "duration" : 131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Checkout Process"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 23"
+  }, {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "shopping_checkout_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShoppingCheckoutFeature"
+  }, {
+    "name" : "host",
+    "value" : "769b8848435f"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.shopping_checkout_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "TestCaseID: 23" ]
+  },
+  "source" : "27037915c799b41d.json",
+  "parameterValues" : [ ]
+}

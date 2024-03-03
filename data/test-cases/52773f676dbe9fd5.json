@@ -1,0 +1,1074 @@
+{
+  "uid" : "52773f676dbe9fd5",
+  "name" : "Login User with correct email and password",
+  "fullName" : "tests.user_management_feature_test.TestRegistrationFeature#test_login_with_valid_data",
+  "historyId" : "483d7fcebbc587c7de7241c637e54b1a",
+  "time" : {
+    "start" : 1709475783815,
+    "stop" : 1709475798888,
+    "duration" : 15073
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1709475782672,
+      "stop" : 1709475783539,
+      "duration" : 867
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1709475783539,
+      "stop" : 1709475783815,
+      "duration" : 276
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1709475562608,
+      "stop" : 1709475562682,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Open https://automationexercise.com/ page",
+      "time" : {
+        "start" : 1709475783815,
+        "stop" : 1709475784674,
+        "duration" : 859
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475784674,
+        "stop" : 1709475784753,
+        "duration" : 79
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Click Signup/Login header button",
+      "time" : {
+        "start" : 1709475784753,
+        "stop" : 1709475785319,
+        "duration" : 566
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1709475785319,
+        "stop" : 1709475785328,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter name for signup",
+      "time" : {
+        "start" : 1709475785328,
+        "stop" : 1709475785485,
+        "duration" : 157
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'George Kelley'",
+        "time" : {
+          "start" : 1709475785328,
+          "stop" : 1709475785485,
+          "duration" : 157
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-name\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'George Kelley'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Enter email for signup",
+      "time" : {
+        "start" : 1709475785485,
+        "stop" : 1709475785565,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'testmail2446@mail.com'",
+        "time" : {
+          "start" : 1709475785485,
+          "stop" : 1709475785565,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"signup-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'testmail2446@mail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click signup button",
+      "time" : {
+        "start" : 1709475785565,
+        "stop" : 1709475786458,
+        "duration" : 893
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/signup is opened",
+      "time" : {
+        "start" : 1709475786458,
+        "stop" : 1709475786471,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Fill 'Enter Account Information' section",
+      "time" : {
+        "start" : 1709475786471,
+        "stop" : 1709475787211,
+        "duration" : 740
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'password123qwerty'",
+        "time" : {
+          "start" : 1709475786624,
+          "stop" : 1709475786743,
+          "duration" : 119
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#password')"
+        }, {
+          "name" : "value",
+          "value" : "'password123qwerty'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: '6'",
+        "time" : {
+          "start" : 1709475786743,
+          "stop" : 1709475786804,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#days')"
+        }, {
+          "name" : "option_text",
+          "value" : "'6'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: 'April'",
+        "time" : {
+          "start" : 1709475786804,
+          "stop" : 1709475786865,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#months')"
+        }, {
+          "name" : "option_text",
+          "value" : "'April'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: '2006'",
+        "time" : {
+          "start" : 1709475786865,
+          "stop" : 1709475786921,
+          "duration" : 56
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#years')"
+        }, {
+          "name" : "option_text",
+          "value" : "'2006'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "c5dc6a169215b394",
+        "name" : "Filled account information section form",
+        "source" : "c5dc6a169215b394.png",
+        "type" : "image/png",
+        "size" : 146735
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "Fill 'Address Information' section",
+      "time" : {
+        "start" : 1709475787211,
+        "stop" : 1709475788160,
+        "duration" : 949
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'Jennifer'",
+        "time" : {
+          "start" : 1709475787211,
+          "stop" : 1709475787285,
+          "duration" : 74
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#first_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Jennifer'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Martin'",
+        "time" : {
+          "start" : 1709475787286,
+          "stop" : 1709475787364,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#last_name')"
+        }, {
+          "name" : "value",
+          "value" : "'Martin'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Trevino Group'",
+        "time" : {
+          "start" : 1709475787364,
+          "stop" : 1709475787445,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#company')"
+        }, {
+          "name" : "value",
+          "value" : "'Trevino Group'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '097 Walker Crossroad'",
+        "time" : {
+          "start" : 1709475787446,
+          "stop" : 1709475787534,
+          "duration" : 88
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address1')"
+        }, {
+          "name" : "value",
+          "value" : "'097 Walker Crossroad'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Suite 532'",
+        "time" : {
+          "start" : 1709475787534,
+          "stop" : 1709475787616,
+          "duration" : 82
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#address2')"
+        }, {
+          "name" : "value",
+          "value" : "'Suite 532'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Select option with value: 'Canada'",
+        "time" : {
+          "start" : 1709475787616,
+          "stop" : 1709475787677,
+          "duration" : 61
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "select_locator",
+          "value" : "('css selector', '#country')"
+        }, {
+          "name" : "option_text",
+          "value" : "'Canada'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'North Dakota'",
+        "time" : {
+          "start" : 1709475787677,
+          "stop" : 1709475787757,
+          "duration" : 80
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#state')"
+        }, {
+          "name" : "value",
+          "value" : "'North Dakota'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: 'Wallacemouth'",
+        "time" : {
+          "start" : 1709475787757,
+          "stop" : 1709475787836,
+          "duration" : 79
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#city')"
+        }, {
+          "name" : "value",
+          "value" : "'Wallacemouth'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '75933'",
+        "time" : {
+          "start" : 1709475787836,
+          "stop" : 1709475787911,
+          "duration" : 75
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#zipcode')"
+        }, {
+          "name" : "value",
+          "value" : "'75933'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "Fill field with value: '001-605-679-8236x496'",
+        "time" : {
+          "start" : 1709475787911,
+          "stop" : 1709475787998,
+          "duration" : 87
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '#mobile_number')"
+        }, {
+          "name" : "value",
+          "value" : "'001-605-679-8236x496'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "9d1dac12f67763a0",
+        "name" : "Filled addres section form",
+        "source" : "9d1dac12f67763a0.png",
+        "type" : "image/png",
+        "size" : 132279
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 10,
+      "hasContent" : true
+    }, {
+      "name" : "Click create account button",
+      "time" : {
+        "start" : 1709475788160,
+        "stop" : 1709475789054,
+        "duration" : 894
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Scroll element into view",
+        "time" : {
+          "start" : 1709475788160,
+          "stop" : 1709475788170,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "element_locator",
+          "value" : "('css selector', '[data-qa=\"create-account\"]')"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/account_created is opened",
+      "time" : {
+        "start" : 1709475789054,
+        "stop" : 1709475789142,
+        "duration" : 88
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User creation message visible",
+      "time" : {
+        "start" : 1709475789142,
+        "stop" : 1709475789315,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3890f15a43251fbe",
+        "name" : "User created",
+        "source" : "3890f15a43251fbe.png",
+        "type" : "image/png",
+        "size" : 70093
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1709475789315,
+        "stop" : 1709475790384,
+        "duration" : 1069
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Close Advertisement",
+        "time" : {
+          "start" : 1709475789415,
+          "stop" : 1709475790383,
+          "duration" : 968
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b405a93fe88dc6c2",
+          "name" : "Advertisement Status",
+          "source" : "b405a93fe88dc6c2.txt",
+          "type" : "text/plain",
+          "size" : 20
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475790384,
+        "stop" : 1709475790399,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User name header visible",
+      "time" : {
+        "start" : 1709475790399,
+        "stop" : 1709475790546,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Verify user status text",
+      "time" : {
+        "start" : 1709475790546,
+        "stop" : 1709475790598,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify user status text is correct for user George Kelley",
+        "time" : {
+          "start" : 1709475790598,
+          "stop" : 1709475790598,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click logout header button",
+      "time" : {
+        "start" : 1709475790598,
+        "stop" : 1709475791052,
+        "duration" : 454
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1709475791052,
+        "stop" : 1709475791061,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/login is opened",
+      "time" : {
+        "start" : 1709475791061,
+        "stop" : 1709475791125,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Enter login email",
+      "time" : {
+        "start" : 1709475791126,
+        "stop" : 1709475791226,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'testmail2446@mail.com'",
+        "time" : {
+          "start" : 1709475791126,
+          "stop" : 1709475791226,
+          "duration" : 100
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"login-email\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'testmail2446@mail.com'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password",
+      "time" : {
+        "start" : 1709475791226,
+        "stop" : 1709475791319,
+        "duration" : 93
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Fill field with value: 'password123qwerty'",
+        "time" : {
+          "start" : 1709475791226,
+          "stop" : 1709475791319,
+          "duration" : 93
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', '[data-qa=\"login-password\"]')"
+        }, {
+          "name" : "value",
+          "value" : "'password123qwerty'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click login button",
+      "time" : {
+        "start" : 1709475791319,
+        "stop" : 1709475792000,
+        "duration" : 681
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475792000,
+        "stop" : 1709475792010,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User name header visible",
+      "time" : {
+        "start" : 1709475792010,
+        "stop" : 1709475792099,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Verify user status text",
+      "time" : {
+        "start" : 1709475792099,
+        "stop" : 1709475792127,
+        "duration" : 28
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Verify user status text is correct for user George Kelley",
+        "time" : {
+          "start" : 1709475792127,
+          "stop" : 1709475792127,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "Click delete account header button",
+      "time" : {
+        "start" : 1709475792127,
+        "stop" : 1709475792761,
+        "duration" : 634
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/delete_account is opened",
+      "time" : {
+        "start" : 1709475792761,
+        "stop" : 1709475792773,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "User deletion message visible",
+      "time" : {
+        "start" : 1709475792773,
+        "stop" : 1709475793089,
+        "duration" : 316
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ecb4ee7d08b92585",
+        "name" : "User deleted",
+        "source" : "ecb4ee7d08b92585.png",
+        "type" : "image/png",
+        "size" : 129094
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Click continue button",
+      "time" : {
+        "start" : 1709475793089,
+        "stop" : 1709475798877,
+        "duration" : 5788
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Page https://automationexercise.com/ is opened",
+      "time" : {
+        "start" : 1709475798877,
+        "stop" : 1709475798887,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 53,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1709475798888,
+      "stop" : 1709475798982,
+      "duration" : 94
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "User login"
+  }, {
+    "name" : "feature",
+    "value" : "Registration Functionality"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 2"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "user_management_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRegistrationFeature"
+  }, {
+    "name" : "host",
+    "value" : "769b8848435f"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.user_management_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "TestCaseID: 2" ]
+  },
+  "source" : "52773f676dbe9fd5.json",
+  "parameterValues" : [ ]
+}

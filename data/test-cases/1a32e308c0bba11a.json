@@ -1,0 +1,118 @@
+{
+  "uid" : "1a32e308c0bba11a",
+  "name" : "Place Order: Login before Checkout (via API)",
+  "fullName" : "tests.shopping_checkout_feature_test.TestShoppingCheckoutFeature#test_order_placement_login_before_checkout_API",
+  "historyId" : "293d591358651ec97e6d34b0c325b746",
+  "time" : {
+    "start" : 1709475769417,
+    "stop" : 1709475769417,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Skipped: unconditional skip",
+  "statusTrace" : "('/usr/workspace/tests/shopping_checkout_feature_test.py', 273, 'Skipped: unconditional skip')",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1709475769420,
+      "stop" : 1709475770305,
+      "duration" : 885
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1709475562608,
+      "stop" : 1709475562682,
+      "duration" : 74
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1709475778924,
+      "stop" : 1709475779047,
+      "duration" : 123
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Checkout Process"
+  }, {
+    "name" : "tag",
+    "value" : "TestCaseID: 16 - API"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "Shopping & Checkout"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.skip"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "shopping_checkout_feature_test"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestShoppingCheckoutFeature"
+  }, {
+    "name" : "host",
+    "value" : "769b8848435f"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.shopping_checkout_feature_test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "TestCaseID: 16 - API", "@pytest.mark.skip" ]
+  },
+  "source" : "1a32e308c0bba11a.json",
+  "parameterValues" : [ ]
+}
