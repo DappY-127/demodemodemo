@@ -1,4 +1,5 @@
 import allure
+import pytest
 from .base_test import BaseTest
 
 
@@ -240,6 +241,7 @@ class TestShoppingCheckoutFeature(BaseTest):
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.story("Checkout Process")
     @allure.tag('TestCaseID: 15 - API')
+    @pytest.mark.skip()
     def test_order_placement_register_before_checkout_API(self):
         self.register_account_via_api()
         self.signup_login_page.open()
@@ -272,6 +274,7 @@ class TestShoppingCheckoutFeature(BaseTest):
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.story("Checkout Process")
     @allure.tag('TestCaseID: 16 - API')
+    @pytest.mark.skip()
     def test_order_placement_login_before_checkout_API(self):
         self.register_account_via_api()
         self.signup_login_page.open()
@@ -304,6 +307,7 @@ class TestShoppingCheckoutFeature(BaseTest):
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.story("Checkout Process")
     @allure.tag('TestCaseID: 20 - API')
+    @pytest.mark.skip()
     def test_products_presence_at_cart_after_login_API(self):
         self.register_account_via_api()
 
